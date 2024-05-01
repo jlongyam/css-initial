@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>iframe-scale</title>
+<style>
+  iframe {
+    width:100%;
+    height: 200px;
+  }
+  #zoom_half {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+    
+  }
+</style>
+</head>
+<body>
+  <iframe src=https://example.com></iframe>
+  <iframe id=zoom_half src=https://example.com></iframe>
+</body>
+</html>
