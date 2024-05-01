@@ -1,9 +1,11 @@
 # [initial-css](https://github.com/jlongyam/initial-css)
 
-Based of `simple.css-2.3.0`
+## Roadmap
 
-## Links
+- [NO] font stack
+- [NO] color theme
 
-- https://github.com/kevquirk/simple.css
-- https://simplecss.org/
-- https://simplecss.org/demo
+## Inspired By
+
+- http://youmightnotneedjs.com
+- https://simplecss.org
