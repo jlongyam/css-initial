@@ -1,12 +1,7 @@
-# [initial-css](https://github.com/jlongyam/css-initial)
+# [css-initial](https://github.com/jlongyam/css-initial)
 
 ## Roadmap
 
-- [NO] font stack
-- [NO] color theme
-
-## References
-
-- https://youmightnotneedjs.com
-- https://simplecss.org
-
+- [ ] font-stack
+- [ ] color-theme
+- [x] pattern

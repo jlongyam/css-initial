@@ -1,0 +1,22 @@
+# html meta for css
+
+## viewport
+
+```html
+<meta
+	name="viewport"
+	content="
+		width=device-width,
+		initial-scale=1.0,
+		minimum-scale=1.0,
+		maximum-scale=1.0,
+		shrink-to-fit=no,
+		user-scalable=no,
+		viewport-fit=cover" />
+<!--
+- 2 first line is required
+- initial zoom = 1
+- lock zoom
+- avoid use user-scalable
+see more https://developer.mozilla.org/en-US/docs/Web/HTML/Viewport_meta_tag
+-->

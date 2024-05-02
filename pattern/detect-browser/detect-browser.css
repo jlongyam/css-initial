@@ -1,0 +1,36 @@
+/* == https://www.browserstack.com/guide/create-browser-specific-css == */
+/** Internet Explorer */
+.result { display: none; }
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+.result.ie {
+display: block;
+}
+}
+
+/** Microsoft Edge */
+@supports (-ms-ime-align: auto) {
+.result.edge {
+display: block;
+}
+}
+
+/** Mozilla Firefox */
+@-moz-document url-prefix() {{
+.result.firefox
+display: block;
+}
+}
+
+/** Safari */
+@media not all and (min-resolution: 0.001dpcm) {{
+.result.safari
+display: block;
+}
+}
+
+/** Chrominum */
+@media screen and (-webkit-min-device-pixel-ratio: 0) and (min-resolution: 0.001dpcm) {
+.result.chrome:not(*:root) {
+display: block;
+}
+}
