@@ -1,0 +1,15 @@
+/* for 'flex' or 'grid' */
+
+/* item-align */
+.sort_item-align_start       { align-items: start }
+.sort_item-align_center      { align-items: center }
+.sort_item-align_end         { align-items: end }
+.sort_item-align_stretch     { align-items: stretch }
+.sort_item-align_baseline    { align-items: baseline }
+
+/* item-justify */
+.sort-item-justify_start         { justify-content: start }
+.sort-item-justify_center        { justify-content: center }
+.sort-item-justify_end           { justify-content: end }
+.sort-item-justify_space-between { justify-content: space-between }
+.sort-item-justify_space-around  { justify-content: space-around }

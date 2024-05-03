@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+  <title>test: debug-layer</title>
+  <link href="debug-layer.css" rel="stylesheet">
+  <link href="../../base/typography.css" rel="stylesheet">
+</head>
+
+<body class="debug">
+  <div id="ddebug_layer" class="debug-layer">
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+  </div>
+  <div class="ddebug-component">
+    <div class="item">This is <abbr title="abbreviation text">abbr</i> text.</div>
+    <div class="item">Declaration: <code>var <b>variable</b></code> inline text.</div>
+    <div class="item">
+      Make debug layer <button onclick="debug_layer.classList.toggle('debug-layer')">deactive</button>
+    </div>
+    <div class="item"><pre>[debug-layer].classList.toggle('debug-layer')</pre></div>
+  </div>
+  <div id="debug_box">
+  
+  </div>
+  <script>
+  
+  </script>
+</body>
+
+</html>

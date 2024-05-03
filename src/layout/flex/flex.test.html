@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1, viewport-fit=cover" />
+  <title>test: flex</title>
+  <link href="flex.css" rel="stylesheet">
+  <style> 
+    .demo-parent {
+      border: 1px solid silver;
+      height: 200px;
+    }
+    .demo-child {
+      border: 2px solid orange;
+      padding: 5px;
+    }
+    .demo-child:nth-child(1){ border-color: green; }
+    .demo-child:nth-child(2){ border-color: purple; }
+    [type=checkbox] { vertical-align: middle; }
+  </style>
+</head>
+<body>
+  <h1><code>.flex</code></h1>
+  <p>
+    <label><code>sort_item-align</code></label>
+    <select id="select_align" onchange="changeAlign(this)">
+      <option value="">NO_CLASS</option>
+      <option value="sort_item-align_start">_start</option>
+      <option value="sort_item-align_center">_center</option>
+      <option value="sort_item-align_end">_end</option>
+      <option value="sort_item-align_stretch">_stretch</option>
+      <option value="sort_item-align_baseline">_baseline</option>
+    </select>
+    <b>  and|or  </b>
+    <label><code>sort_item-justify</code></label>
+    <select id="select_justify" onchange="changeJustify(this)">
+      <option value="">NO_CLASS</option>
+      <option value="sort-item-justify_start">_start</option>
+      <option value="sort-item-justify_center">_center</option>
+      <option value="sort-item-justify_end">_end</option>
+      <option value="sort-item-justify_space-between">_space-between</option>
+      <option value="sort-item-justify_space-around">_space-around</option>
+    </select>
+  </p>
+  <div id="demo_flex" class="demo-parent flex">
+    <div class="demo-child flex-item"><code>flex-item</code> <input type="checkbox" onclick="checkGrow(this)"></div>
+    <div class="demo-child flex-item"><code>flex-item</code> <input type="checkbox" onclick="checkGrow(this)"></div>
+    <div class="demo-child flex-item_grow"><code>flex-item_grow</code> <input type="checkbox" onclick="checkGrow(this)" checked></div>
+  </div>
+  <script>
+    function changeAlign(el) {
+      demo_flex.className = "demo-parent flex " + el.value + " " + select_justify.value
+    }
+    function changeJustify(el) {
+      demo_flex.className = "demo-parent flex " + el.value + " " + select_align.value
+    }
+    function checkGrow(el) {
+      let prev = el.previousElementSibling
+      if( el.parentElement.classList.contains( 'flex-item' ) ) {
+        el.parentElement.className = 'demo-child flex-item_grow'
+        prev.textContent = 'flex-item_grow'
+        return
+      }
+      if( el.parentElement.classList.contains( 'flex-item_grow' ) ) {
+        el.parentElement.className = 'demo-child flex-item'
+        prev.textContent = 'flex-item'
+        return
+      }
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+:root {
+  --color_black: #111111;
+  --color_gray: #AAAAAA;
+  --color_silver: #DDDDDD;
+  --color_white: #FFFFFF;
+  --color_red: #FF4136;
+  --color_green: #2ECC40;
+  --color_blue: #0074D9;
+  --color_navy: #001F3F;
+  --color_aqua: #7FDBFF;
+  --color_teal: #39CCCC;
+  --color_olive: #3D9970;
+  --color_lime: #01FF70;
+  --color_yellow: #FFDC00;
+  --color_orange: #FF851B;
+  --color_fuchsia: #F012BE;
+  --color_purple: #B10DC9;
+  --color_maroon: #85144B;
+}

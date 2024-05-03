@@ -1,0 +1,47 @@
+@import '../../base/global.css';
+
+:root {
+  --debug-line: 24px;
+  --debug-line_gap: 5px;
+  --debug-line_color: silver;
+  --debug-text: '24px';
+  --debug-border: dotted;
+  
+}
+.debug-layer {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  user-select: none;
+}
+.debug-layer .line {
+  border: 1px var(--debug-border) var(--debug-line_color);
+  border-left: 0;
+  border-right: 0;
+  position: relative;
+  width: 100%;
+  height: var(--debug-line);
+  margin-bottom: var(--debug-line_gap);
+}
+.debug-layer .line::after {
+  content: var(--debug-text);
+  color: silver;
+  font-family: monospace;
+  line-height: var(--debug-line);
+  position: absolute;
+  top: 0;
+  right: 10px;
+}
+
+.debug-component .item {
+  border: 1px solid orange;
+}
+.debug-component .item:not(:last-child) {
+  border-bottom: 0;
+}
+
+.debug { outline: 5px solid var(--color_red); }
+.debug * { outline: 1px dotted blue; }
+.debug * * { outline: 3px solid green; }
+.debug * *:nth-child(odd) { outline: 2px solid purple; }

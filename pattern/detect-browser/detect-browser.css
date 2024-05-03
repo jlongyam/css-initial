@@ -9,6 +9,7 @@
 */
 
 /* stylish */
+*, *::before, *::after { box-sizing: border-box; }
 body {
   margin: 10%;
   font: 48px/2.0 monospace;
@@ -23,17 +24,13 @@ body > div {
 .display { display: none; }
 
 /** ============= Chrominum ================ */
-.result.chrome:after {
-    content: 'Version: ?';
-    font-size: 18px;
-    background-color: black;
-    padding: 5px;
-    color: white;
-}
 /* --- Old ---*/
 @media screen and (-webkit-min-device-pixel-ratio: 0) and (min-resolution: 0.001dpcm) {
   .result.chrome:not(*:root) { display: block; }
   .result.chrome:after {
+    font-size: 18px;
+    color: white;
+    padding: 5px;
     content: 'Version: Old';
     background-color: red;
   } 
@@ -43,12 +40,42 @@ body > div {
   @media screen and (-webkit-min-device-pixel-ratio: 0) and (min-resolution: 0.001dpcm) {
     .result.chrome:not(*:root) { display: block; }
     .result.chrome:after {
+      font-size: 18px;
+      color: white;
+      padding: 5px;
       content: 'Version: Current';
       background-color: green;
     } 
   }
 }
 
+/**  ============= Mozilla Firefox ================ */
+/* --- Old ---*/
+@-moz-document url-prefix() {
+  .result.firefox { display: block; }
+  .result.firefox:after {
+    font-size: 18px;
+    color: white;
+    padding: 5px;
+    content: 'Version: Old';
+    background-color: red;
+  }
+}
+/* --- Current --- */
+@media screen and (-webkit-min-device-pixel-ratio: 0) and (min-resolution: 0.001dpcm) {
+@-moz-document url-prefix() {
+  @supports ( grid-template-columns: none ) {
+    .result.firefox { display: block; }
+    .result.firefox:after {
+      font-size: 18px;
+      color: white;
+      padding: 5px;
+      content: 'Version: Current';
+      background-color: green;
+    }
+  }
+}
+}
 /**  ============= Internet Explorer ================ */
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   .result.ie { display: block; }
@@ -57,13 +84,6 @@ body > div {
 /**  ============= Microsoft Edge ================ */
 @supports (-ms-ime-align: auto) {
   .result.edge { display: block; }
-}
-
-/**  ============= Mozilla Firefox ================ */
-@-moz-document url-prefix() {
-  .result.firefox {
-    display: block;
-  }
 }
 
 /**  ============= Safari ================ */

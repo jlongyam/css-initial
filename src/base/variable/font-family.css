@@ -1,0 +1,8 @@
+:root {
+  /* default */
+  --font-family_monospace: SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', 'Roboto Mono', 'Ubuntu Monospace', 'Oxygen Mono', 'Liberation Mono', monospace;
+  --font-family_sans-serif:  system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Ubuntu, Cantarell, Oxygen, 'Helvetica Neue', Arial, sans-serif;
+  --font-family_serif: Constantia, 'Lucida Bright', Lucidabright, 'Lucida Serif', Lucida, 'DejaVu Serif', 'Bitstream Vera Serif', 'Liberation Serif', Georgia, serif;	
+  /* specific */
+  --font-family_verdana: Verdana, Geneva, Tahoma, sans-serif;
+}
