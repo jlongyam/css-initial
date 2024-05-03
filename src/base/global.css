@@ -1,5 +1,4 @@
-@import 'variable/font-family.css';
-@import 'variable/color-basic.css';
+@import 'variable.css';
 
 *,
 *::before,
