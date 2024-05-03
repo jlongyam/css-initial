@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>config-box</title>
+  <link href="config-box.css" rel="stylesheet">
+</head>
+
+<body>
+<div id="config_box" class="config-box">
+    <div class="config-box_head">
+      <span class="config-box_title">TITLE</span>
+      <span class="config-box_close"></span>
+    </div>
+    <div class="config-box_body">
+      <div class="config-box_field">
+        <div class="config-box_text">Choose only one</div>
+        <div class="config-box_switch">
+          <span class="config-box_switch-item">switch item 1</span>
+          <span class="config-box_switch-item">switch item long text long long text</span>
+          <span class="config-box_switch-item">switch item 3</span>
+        </div>
+      </div>
+      <div class="config-box_field">
+        <span class="config-box_action">Action</span>
+      </div>
+      <div class="config-box_field">
+        <div class="config-box_choose">
+          <span class="config-box_choose-item active">choose item 1</span>
+          <span class="config-box_choose-item">choose item 2</span>
+          <span class="config-box_choose-item">choose item 3</span>
+        </div>
+      </div>
+      <div class="config-box_field">
+        <span class="config-box_input" contenteditable="true" spellcheck="false"></span>
+      </div>
+      <div class="config-box_field">
+        <span class="config-box_action" onclick="this.parentElement.parentElement.parentElement.remove()">Close</span>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
