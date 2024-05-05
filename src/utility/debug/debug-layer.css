@@ -1,5 +1,13 @@
 @import '../../base/global.css';
-
+/*
+  <div id="debug_layer" class="debug-layer">
+    <div class="line"></div>
+    ...
+  <div class="debug-component">
+    <div class="item">
+    ...
+  
+*/
 :root {
   --debug-line: 24px;
   --debug-line_gap: 5px;
@@ -40,8 +48,3 @@
 .debug-component .item:not(:last-child) {
   border-bottom: 0;
 }
-
-.debug { outline: 5px solid var(--color_red); }
-.debug * { outline: 1px dotted blue; }
-.debug * * { outline: 3px solid green; }
-.debug * *:nth-child(odd) { outline: 2px solid purple; }
