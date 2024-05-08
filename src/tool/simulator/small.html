@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,viewport-fit=cover">
+  <title>small</title>
+  <link href="./device.css" rel="stylesheet">
+<style>
+/* xx-small */
+@media screen and (max-width: 320px) {
+  .small { scale: .65; }
+  .absolute-center { margin-top: 190px; }
+  .spec { top: -180px }
+  }
+/* x-small */
+@media screen and (min-width: 321px) and (max-width: 375px) {
+  .small { scale: .8; }
+  .absolute-center { margin-top: 320px; }
+  .spec { top: -310px }
+  }
+/* small */
+@media screen and (min-width: 376px) and (max-width: 425px) {
+  .small { scale: .9; }
+  .absolute-center { margin-top: 380px; }
+  .spec { top: -360px }
+  }
+/* medium */
+@media screen and (min-width: 426px) and (max-width: 768px) {
+  .small { scale: 1; }
+  .absolute-center { margin-top: 450px; }
+  .spec { top: -430px }
+  }
+/* large */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .small { scale: 1; }
+  .absolute-center { margin-top: 400px; }
+  .spec { top: -370px }
+  }
+/* x-large */
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
+  .small { scale: 1; }
+  .absolute-center { margin-top: 300px; }
+  .spec { top: -280px }
+  }
+/* xx-large */
+@media screen and (min-width: 1441px) {
+  .small { scale: 1; }
+  .absolute-center { margin-top: 0; }
+  .spec { top: 70px; }
+  }
+</style>
+</head>
+<body class="relative">
+  <div class="absolute-center">
+  <div class="spec"></div>
+  <div class="scale">
+    <div class='small'>
+      <div class='device'>
+        <iframe src="./example.html"></iframe>
+      </div>
+    </div>
+  </div>
+  </div>
+  <script src="spec.js"></script>
+</body>
+</html>

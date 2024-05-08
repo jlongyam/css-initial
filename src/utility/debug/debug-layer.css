@@ -1,4 +1,3 @@
-@import '../../base/global.css';
 /*
   <div id="debug_layer" class="debug-layer">
     <div class="line"></div>
@@ -10,7 +9,7 @@
 */
 :root {
   --debug-line: 24px;
-  --debug-line_gap: 5px;
+  --debug-line_gap: 0;
   --debug-line_color: silver;
   --debug-text: '24px';
   --debug-border: dotted;

@@ -1,0 +1,11 @@
+@import 'fluidtype.css';
+
+:root {
+  --font-size: calc(10px + 0.698vw);
+  --font-family: var(--font-family_sans-serif);
+  --line-height: calc(var(--font-size) * 1.5);
+ 
+}
+p {
+  margin: .5rem 0;
+}

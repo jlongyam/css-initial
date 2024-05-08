@@ -6,4 +6,10 @@
   --font-family_serif: Constantia, 'Lucida Bright', Lucidabright, 'Lucida Serif', Lucida, 'DejaVu Serif', 'Bitstream Vera Serif', 'Liberation Serif', Georgia, serif;	
   /* specific */
   --font-family_verdana: Verdana, Geneva, Tahoma, sans-serif;
+  
+  /* emoji */
+  --font-family_system-emoji: system-ui, -apple-system, "Segoe UI", "Roboto", "Ubuntu", "Cantarell", "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-family_mono-emoji: ui-monospace,  "Menlo", "Consolas", "Roboto Mono", "Ubuntu Monospace", "Noto Mono", "Oxygen Mono", "Liberation Mono", monospace, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  /* instance */
+  --font-rimary: var(--font-family_system-emoji);
 }

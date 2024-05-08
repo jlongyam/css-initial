@@ -1,0 +1,8 @@
+iframe {
+  display: block;
+  border: 1px solid silver;
+  width: 100%;
+  }
+  iframe:not([src]) {
+    background-color: silver;
+  }

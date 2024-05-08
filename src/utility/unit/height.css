@@ -1,6 +1,15 @@
-/* -- height for icon and list -- */
-.h_24px    { height: 24px; }
-.h_36px    { height: 36px; }
-.h_48px    { height: 48px; }
-.h_56px    { height: 56px; }
-.h_64px    { height: 64px; }
+/* -- height for icon, list, gap -- */
+/* https://m3.material.io/components/lists/specs */
+
+.height_8px       { height: 8px   }
+.height_16px      { height: 16px; }
+.height_24px    { height: 24px; }
+.height_36px    { height: 36px; }
+.height_40px    { height: 40px; }
+.height_56px    { height: 56px; }
+.height_64px    { height: 64px; }
+.height_72px    { height: 72px; }
+.height_88px    { height: 88px; }
+
+.height_50 	{ height:  50%;	}
+.height_100	{ height: 100%; } 

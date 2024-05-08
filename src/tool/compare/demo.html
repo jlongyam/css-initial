@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Compare</title>
+  <link href="./compare.css" rel="stylesheet">
+<style>
+
+</style>
+</head>
+<body>
+  <main class="compare">
+    <header class="compare-header">HEADER</header>
+    <nav class="compare-tab">
+      <label class="tab_item" for="switch_1">View 1</label>
+      <label class="tab_item" for="switch_2">View 2</label>
+    </nav>
+    <div class="compare-view">
+        <section class="view-split">
+          <div class="split_half">
+            <input id="switch_1" class="switch-radio" type="radio" name="switch" checked>
+            <iframe class="compare-iframe switch-target" src="about:blank"></iframe>
+          </div>        
+          <div class="split_half">
+            <input id="switch_2" class="switch-radio" type="radio" name="switch">
+            <iframe class="compare-iframe switch-target" src="../simulator/basic.html"></iframe>
+          </div>
+        </section>
+    </div>
+    <footer class="compare-footer">FOOTER</footer>
+  </main>
+</body>
+</html>

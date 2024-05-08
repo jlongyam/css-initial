@@ -1,0 +1,8 @@
+span, code, label {
+  vertical-align: middle;
+}
+label {
+  /* handle label > input */
+  display: inline-flex;
+  align-items: center;
+}
