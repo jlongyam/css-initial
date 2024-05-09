@@ -1,0 +1,7 @@
+:root {
+  /* == margin == */
+  --margin-block: .5rem 0;
+  --padding-block: 1rem;
+  --border-solid: 1px solid silver;
+  --border-dotted: 1px dotted silver;
+}

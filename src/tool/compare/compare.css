@@ -1,4 +1,4 @@
-@import '../../base/import.css';
+@import '../../base/_export.css';
 @import '../../component/media/iframe/iframe.css';
 @import '../../utility/switch/switch.css';
 
@@ -18,15 +18,20 @@
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  height: 36px;
+  height: 40px;
   border: 1px solid silver;
   }
-  .tab_item {
-    padding: 2px;
+  .tab-item {
+    padding: 0 2px;
     font-family: var(--font-family_monospace);
     outline: 1px solid gray;
     outline-offset: 1px;
     cursor: default;
+    }
+  .tab-item._button {
+    background-color: silver;
+    cursor: pointer;
+    outline-offset: 0;
     }
 .compare-view {
   width: 0;

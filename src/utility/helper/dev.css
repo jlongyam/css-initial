@@ -1,0 +1,20 @@
+.empty {
+  height: 24px;
+  background-color: whitesmoke;
+}
+.code {
+  height: 24px;
+  position: relative;
+}
+.code::before {
+  content: attr(data-name);
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background-color: purple;
+  padding: 0 5px;
+  font-family: monospace;
+  color: white;
+  font-weight: bold;
+}

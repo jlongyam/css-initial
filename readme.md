@@ -1,3 +1,1 @@
 # [css-initial](https://github.com/jlongyam/css-initial)
-
-Progress ...

@@ -1,0 +1,54 @@
+/*
+  <div class="layer">
+    <div class="line"></div>
+    ...
+  <div class="component">
+    <div class="item">
+    ...
+  
+*/
+:root {
+  --line: 24px;
+  --line_gap: 0;
+  --line_color: silver;
+  --line_text: '24px';
+  --line_border: dotted;
+}
+.layer {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  user-select: none;
+}
+.layer .line {
+  border-bottom: 1px var(--line_border) var(--line_color);
+  position: relative;
+  width: 100%;
+  height: var(--line);
+  margin-bottom: var(--line_gap);
+}
+.layer .line:first-child {
+  border-top: 1px var(--line_border) var(--line_color);
+}
+.layer .line::after {
+  content: var(--line_text);
+  color: silver;
+  font-family: monospace;
+  line-height: var(--line);
+  position: absolute;
+  top: 0;
+  right: 10px;
+}
+:root {
+  --component-item_color: orange;
+}
+.component {
+  line-height: var(--line);
+}
+.component .item {
+  border-bottom: 1px solid var(--component-item_color);
+}
+.component .item:first-child {
+  border-top: 1px solid var(--component-item_color);
+} 

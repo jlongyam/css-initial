@@ -1,4 +1,4 @@
-@import 'variable/font-family.css';
+@import 'variable/_export.css';
 
 *,*::before,
 *::after {
@@ -11,7 +11,7 @@
   vertical-align: top;
 }
 html {
-  font: 16px/24px monospace;                  /*fix-2*/
+  font: normal 400 16px/24px monospace;       /*fix-2*/
   height: 100%;
   background-color: white;
   color: black;
@@ -21,7 +21,7 @@ html {
 body {
   display: block;
   margin: 0;
-  font: 1rem/1.5 var(--font-rimary);
+  font: normal 400 1rem/24px var(--font-primary);
   height: 100%;
   overflow: auto;                             /*fix-1*/
   -webkit-font-smoothing: antialiased;
@@ -29,9 +29,10 @@ body {
 	-webkit-text-size-adjust: none;
 	tab-size: 4;
 	overflow-wrap: break-word;
+	word-break: break-word;
+	letter-spacing: var(--letter-spacing);
 }
 /*  Note:
     - fix-1: fix bottom spacing
     - fix-2: `rem` base and solid `calc()`
 */
-

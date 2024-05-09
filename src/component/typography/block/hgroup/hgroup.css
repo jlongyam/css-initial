@@ -1,0 +1,4 @@
+hgroup {
+  font-weight: bold;
+  border-bottom: var(--border-solid);
+}
