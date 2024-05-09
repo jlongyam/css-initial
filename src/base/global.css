@@ -8,7 +8,7 @@
 	position: relative;
 	background-repeat: no-repeat;
   text-decoration: inherit;
-  vertical-align: top;
+  vertical-align: baseline;
 }
 html {
   font: normal 400 16px/24px monospace;       /*fix-2*/
@@ -17,6 +17,10 @@ html {
   color: black;
 	color-scheme: dark light;
 	overflow: hidden;                           /*fix-1*/
+	overflow-wrap: break-word;
+  -moz-tab-size: 4;
+  tab-size: 4;
+  -webkit-tap-highlight-color: transparent;
 }
 body {
   display: block;
@@ -25,12 +29,8 @@ body {
   height: 100%;
   overflow: auto;                             /*fix-1*/
   -webkit-font-smoothing: antialiased;
-	-webkit-tap-highlight-color: transparent;
 	-webkit-text-size-adjust: none;
-	tab-size: 4;
-	overflow-wrap: break-word;
 	word-break: break-word;
-	letter-spacing: var(--letter-spacing);
 }
 /*  Note:
     - fix-1: fix bottom spacing

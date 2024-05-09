@@ -1,0 +1,15 @@
+abbr {
+  text-transform: uppercase;
+  letter-spacing: .05em;
+}
+dfn {
+  font-style: normal;
+  font-weight: bold;
+  font-weight: 500;
+}
+abbr[title],
+dfn[title] {
+  text-decoration: none;
+  border-bottom: var(--border-dotted);
+  cursor: help;
+}

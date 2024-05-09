@@ -1,7 +1,9 @@
+@import 'color.css';
 :root {
   /* == margin == */
   --margin-block: .5rem 0;
   --padding-block: 1rem;
-  --border-solid: 1px solid silver;
-  --border-dotted: 1px dotted silver;
+  --border-solid: 1px solid var(--color-border);
+  --border-dotted: 1px dotted var(--color-border);
+  --border-dashed: 1px dashed var(--color-border);
 }

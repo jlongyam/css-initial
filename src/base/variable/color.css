@@ -1,0 +1,8 @@
+:root {
+  --color-link: #2196f3;
+  --color-link_visited: #9c27b0;
+  --color-link_active: #ff5722;
+  --color-link_fragment: #9e9e9e;
+  --color-link_target: #ff5722;
+  --color-border: silver;
+}
