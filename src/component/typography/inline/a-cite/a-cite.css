@@ -29,3 +29,11 @@ a[href^="tel"] {
   border: var(--border-solid);
   padding: 0 3px;
 }
+cite {
+  font-style: normal;
+  font-weight: 500;
+  padding: 0 2px;
+}
+cite:hover {
+  background-color: whitesmoke;
+}

@@ -1,15 +1,17 @@
 abbr {
   text-transform: uppercase;
   letter-spacing: .05em;
+  font-weight: bold;
 }
 dfn {
   font-style: normal;
   font-weight: bold;
-  font-weight: 500;
 }
-abbr[title],
-dfn[title] {
-  text-decoration: none;
-  border-bottom: var(--border-dotted);
+abbr[title] {
+  border-bottom: 3px dotted #9e9e9e;
   cursor: help;
+}
+dfn[title] {
+  cursor: help;
+  border-bottom: 4px solid #9e9e9e;
 }

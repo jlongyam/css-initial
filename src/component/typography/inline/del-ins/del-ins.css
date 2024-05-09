@@ -1,0 +1,35 @@
+del {
+  text-decoration-thickness: 2px;
+  text-decoration-color: #ff5722;
+  text-decoration-line: line-through;
+  text-decoration-style: double;
+}
+ins {
+  background-color: #effff0;
+  padding: 0 2px;
+}
+/* accesibility */
+del::before,
+del::after,
+ins::before,
+ins::after {
+  clip-path: inset(100%);
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+del::before {
+  content: " [deletion start] ";
+}
+del::after {
+  content: " [deletion end] ";
+}
+ins::before {
+  content: " [insertion start] ";
+}
+ins::after {
+  content: " [insertion end] ";
+}
