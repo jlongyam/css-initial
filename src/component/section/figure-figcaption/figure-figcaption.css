@@ -1,0 +1,10 @@
+figure,
+figcaption {
+  padding: var(--base_padding-section);
+  display: flex;
+  flex-direction: column;
+}
+figcaption {
+  border-bottom: var(--base_border_solid);
+  font-weight: bold;
+}

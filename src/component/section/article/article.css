@@ -1,0 +1,6 @@
+/* extend of 'typography/block/article' */
+article {
+  --base_box-shadow_article: 0px 0px 2px 1px #b3b2b2;
+  margin: .5em;
+  box-shadow: var(--base_box-shadow_article);
+}

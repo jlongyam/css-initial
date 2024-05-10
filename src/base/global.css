@@ -1,5 +1,8 @@
 @import 'variable/_export.css';
-
+:root {
+  --base_tab-size: 4;
+  /* TODO: take all variable */
+}
 *,*::before,
 *::after {
 	margin: 0;
@@ -10,16 +13,21 @@
   text-decoration: inherit;
   vertical-align: baseline;
 }
+::selection {
+  background-color: var(--color_aqua);
+  color: #000;
+  text-shadow: none;
+}
 html {
   font: normal 400 16px/24px monospace;       /*fix-2*/
   height: 100%;
-  background-color: white;
-  color: black;
+  background-color: var(--color_silver);
+  color: var(--color_black);
 	color-scheme: dark light;
 	overflow: hidden;                           /*fix-1*/
 	overflow-wrap: break-word;
-  -moz-tab-size: 4;
-  tab-size: 4;
+  -moz-tab-size: var(--base_tab-size);
+  tab-size: var(--base_tab-size);
   -webkit-tap-highlight-color: transparent;
 }
 body {
@@ -28,11 +36,15 @@ body {
   font: normal 400 1rem/24px var(--font-primary);
   height: 100%;
   overflow: auto;                             /*fix-1*/
-  -webkit-font-smoothing: antialiased;
 	-webkit-text-size-adjust: none;
+	-webkit-font-smoothing: antialiased;        /*fix-3*/
+	-moz-osx-font-smoothing: grayscale;         /*fix-3*/
 	word-break: break-word;
+	cursor: default;
+	background-color:var(--color_white);
 }
 /*  Note:
     - fix-1: fix bottom spacing
     - fix-2: `rem` base and solid `calc()`
+    - fix-3: handle icon-font & emoji
 */

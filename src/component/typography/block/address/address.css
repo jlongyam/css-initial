@@ -2,6 +2,6 @@ address {
   margin: var(--margin-block);
   overflow-wrap: break-word;
   font-style: normal;
-  padding: var(padding-block);
+  padding: var(--padding-block);
   border: var(--border-dotted);
 }

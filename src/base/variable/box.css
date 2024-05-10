@@ -1,9 +1,12 @@
-@import 'color.css';
 :root {
+  /* -- size -- */
+  --base_size-border: 1px;
   /* == margin == */
-  --margin-block: .5rem 0;
-  --padding-block: 1rem;
+  --margin-block: .5em 0;
+  --padding-block: 1em;
+  --base_padding-section: 10px;
   --border-solid: 1px solid var(--color-border);
+  --base_border_solid: var(--base_size-border) solid var(--base_color-border);
   --border-dotted: 1px dotted var(--color-border);
   --border-dashed: 1px dashed var(--color-border);
 }

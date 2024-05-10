@@ -37,3 +37,6 @@ cite {
 cite:hover {
   background-color: whitesmoke;
 }
+nav a:link {
+  text-decoration: none;
+}

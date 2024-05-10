@@ -11,5 +11,6 @@
     --font-family_mono-emoji: ui-monospace,  "Menlo", "Consolas", "Roboto Mono", "Ubuntu Monospace", "Noto Mono", "Oxygen Mono", "Liberation Mono", monospace, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   /* instance */
   --font-primary: var(--font-family_system-emoji);
+  --font-secondary: var(--font-family_serif);
   --font-code: var(--font-family_mono-emoji);
 }

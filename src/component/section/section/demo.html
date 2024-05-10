@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="../../../base/_export.css" rel="stylesheet">
+  <link href="../../../layout/_export.css" rel="stylesheet">
+  <link href="../../../utility/_export.css" rel="stylesheet">
+  <link href="../../typography/_export.css" rel="stylesheet">
+  <link href="section.css" rel="stylesheet">
+  <script src="../../../tool/js/random.min.js" defer></script>
+  <script src="../../../utility/helper/dev.js" defer></script>
+</head>
+<body class="page">
+  <div>
+    <div class="code" data-name="section"></div>
+    <div class="empty"></div>
+    <section>CONTENT</section>
+    <div class="empty"></div>
+  </div>
+  <div>
+    <div class="code" data-name="section * 3"></div>
+    <div class="empty"></div>
+    <section>CONTENT_1</section>
+    <section>CONTENT_2</section>
+    <section>CONTENT_3</section>
+    <div class="empty"></div>
+  </div>
+  <div>
+    <div class="code" data-name="p + section h3 + p"></div>
+    <div class="empty"></div>
+    <p data-random-paragraph=3>
+    <section>
+      <h3 data-random-word=12></h3>
+      <p data-random-paragraph=2></p>
+    </section>
+    <section>
+      <h3 data-random-word=5></h3>
+      <p data-random-paragraph=3></p>
+      <pre>function nothing() { return false }</pre>
+    </section>
+    <p data-random-paragraph=1></p>
+    <div class="empty"></div>
+  </div>
+</body>
+</html>
