@@ -2,19 +2,25 @@ li {
   list-style-position: inside;
 }
 ul, ol, menu {
-  padding: .5em;
+  padding: var(--base_padding-section);
 }
-ul li li,
-ol li li,
-menu li li {
-  padding-left: 1em;
-}
+/* -- li style */
 ul {
   list-style: square;
 }
 ol {
-  list-style: auto;
+  list-style: decimal-leading-zero;
 }
 menu {
   list-style: none;
+}
+/* -- li padding */
+ul li li {
+  padding-left: 1em;
+}
+ol li li{
+  padding-left: .5em;
+}
+menu li li {
+  padding-left: 0;
 }

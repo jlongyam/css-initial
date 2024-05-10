@@ -4,7 +4,8 @@
   /* == margin == */
   --margin-block: .5em 0;
   --padding-block: 1em;
-  --base_padding-section: 10px;
+  --base_padding-block: 1em;
+  --base_padding-section: .5em;
   --border-solid: 1px solid var(--color-border);
   --base_border_solid: var(--base_size-border) solid var(--base_color-border);
   --border-dotted: 1px dotted var(--color-border);
