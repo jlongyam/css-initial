@@ -24,3 +24,62 @@ ol li li{
 menu li li {
   padding-left: 0;
 }
+/* OPTIONAL - remove to reset */
+/* -- ul cororize */
+ul {
+  --ul_color: var(--color_gray);
+  padding-left: .25em;
+  }
+  li ul {
+    padding-left: 0;
+    }
+  ol ul {
+    padding-left: 1.75em; 
+    }
+ul li {
+  list-style-type: none;
+  padding-left: 1rem;
+  position: relative;
+  }
+  ul li:before,
+  ol ul li:before {
+    position: absolute;
+    content: "";
+    background: var(--ul_color);
+    width: 5px;
+    height: 5px;
+    top: calc(24px - 15px);
+    left: 0;
+    }
+  /* fix position & counter */
+  ol ul li:before {
+    left: -.5em;
+    counter-increment: none;
+  }
+/* -- ol cororize */
+ol {
+  --ol_color: var(--color_gray);
+  counter-reset: unit;
+  padding-left: 0;
+  }
+  li ol {
+    padding-left: .75em;
+    }
+  ul ol {
+    padding-left: 0;
+    }
+ol li {
+  list-style-type: none;
+  }
+  ol li:before {
+    counter-increment: unit;
+    content: counters( unit,"." ) ".  ";
+    color: var(--ol_color);
+    font-weight: bold;
+    /* fix nested */
+    background: none;
+    top: 0;
+    }
+
+
+  

@@ -1,0 +1,23 @@
+body {
+  
+  /* for element: section
+      hr
+      
+    */
+  --base_margin-section: 0;
+  --base_paddin-section: .5em;
+  
+  /* for element: block
+      - p
+      - table
+    */
+  --base_margin-block: .5em 0;
+  --base_padding-block: 1em;
+  
+  /* for element: with-border
+      - figure
+    */
+  --base_border-size_1: 1px;
+  --base_border-size_2: 2px;
+  --base_border-size_3: 4px;
+}
