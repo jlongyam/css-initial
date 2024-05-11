@@ -18,6 +18,12 @@
   color: #000;
   text-shadow: none;
 }
+/* optional */
+:focus-visible{
+  outline: 3px solid Highlight;
+  outline-offset: 2px;
+  scroll-margin-block: 10vh;
+}
 html {
   font: normal 400 16px/24px monospace;       /*fix-2*/
   height: 100%;

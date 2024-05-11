@@ -9,6 +9,7 @@ summary {
   display: block;
   position: relative;
 	padding-left: 1em;
+	cursor:pointer;
   }
   summary:before {
   position: absolute;

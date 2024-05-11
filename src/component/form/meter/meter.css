@@ -1,0 +1,48 @@
+:root {
+  --meter-height: 36px;
+  --meter_width: auto;
+  --meter_track_border-color: gray;
+  --meter_track_border-radius: 2px;
+  --meter_track_height: calc(16px / 1.5);
+  
+  --meter_point_color-safe: #00ab60;
+  --meter_point_color-warning: #ffbd4f;
+  --meter_point_color-danger: #e22850;
+}
+meter {
+  vertical-align: middle;
+  height: var(--meter_height);
+  min-width: 100px;
+  width: var(--meter_width);
+}
+/* == chrome == */
+meter::-webkit-meter-bar {
+  border-radius: var(--meter_track_border-radius);
+  height: var(--meter_track_height);
+  border-color: var(--meter_track_border-color);
+}
+meter::-webkit-meter-optimum-value {
+  background-color: var(--meter_point_color-safe);
+}
+meter::-webkit-meter-suboptimum-value {
+  background-color: var(--meter_point_color-warning);
+}
+meter::-webkit-meter-even-less-good-value {
+  background-color: var(--meter_point_color-danger);
+}
+/* == firefox == */
+@supports (-moz-appearance:none) {
+  meter {
+    -moz-appearance: none;
+    background: #e9e9ed;
+    height: var(--meter_track_height);
+    border: 1px solid #8f8f9d;
+    border-radius: 2px;
+    vertical-align: middle;
+  }
+  ::-moz-meter-bar { background: black; }
+  :-moz-meter-optimum::-moz-meter-bar { background: var(--meter_point_color-safe); }
+  :-moz-meter-sub-optimum::-moz-meter-bar { background: var(--meter_point_color-warning); }
+  :-moz-meter-sub-sub-optimum::-moz-meter-bar { background: var(--meter_point_color-danger); }
+}
+

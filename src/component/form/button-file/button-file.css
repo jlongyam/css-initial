@@ -1,0 +1,39 @@
+button,
+input[type=button],
+input[type=reset], 
+input[type=submit],
+[role=button] {
+  /* override */
+  -webkit-appearance: button;
+  cursor: pointer;
+  font: inherit;
+  color: inherit;
+  /* styling */
+  font-size: var(--input_button_font_size);
+  font-weight: var(--input_button_font_weight);
+  padding: var(--input_button_padding);
+  height: var(--input_button_height);
+}
+button[disabled],
+input[disabled]
+[role=button][disabled] {
+  cursor: not-allowed;
+}
+button:focus,
+input[type=button]:focus,
+input[type=reset]:focus,
+input[type=submit]:focus,
+input[type=file]:focus,
+[role=button]:focus {
+	outline: var(--input_button_outline);
+	outline-offset: var(--input_button_outline-offset);
+}
+input[type=file] {
+	font-size: var(--input_button_font_size);
+	font-weight: var(--input_button_font_weight);
+  padding:0; /* reset */
+}
+input[type=file]::file-selector-button {
+	padding: var(--input_button_padding);
+	height: var(--input_button_height);
+}

@@ -6,7 +6,7 @@ body {
       - header
       - footer
     */
-  --base_margin-section: 0;
+  --base_margin-section: 0; /* avoid */
   --base_paddin-section: .5em;
   
   /* for element: block/component
@@ -15,7 +15,8 @@ body {
       - fieldset
     */
   --base_margin-block: .5em 0;
+  --base_margin-block_side: .5em;
   --base_padding-block: 1em;
-  
+  --base_padding-block_side: .25em;
   
 }

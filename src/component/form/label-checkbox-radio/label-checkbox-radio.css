@@ -1,0 +1,67 @@
+input[type=checkbox],
+input[type=radio] {
+  /* override */
+  font: inherit;
+  color: inherit;
+  /* reset */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  height: var(--input_height_secondary);
+	width: var(--input_height_secondary);
+	border: 1px solid gray;
+	background-color: ButtonFace;
+	position: relative;
+	margin: auto 0;
+	display: inline-block;
+	vertical-align: middle;
+}
+input[type=checkbox]:focus,
+input[type=radio]:focus {
+  outline: var(--input_button_outline);
+	outline-offset: var(--input_button_outline-offset);
+}
+input[type=radio] {
+	border-radius: 50%;
+}
+input[type=checkbox] {
+  border-radius: 2px;
+}
+input[type=checkbox]::before,
+input[type=radio]::before {
+	position: absolute;
+	content:"";
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom:0;
+	background: none;
+}
+input[type=checkbox]:checked::before {
+	background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"><path d="M0,8 5,13 14,4 12,2 5,9 2,6z"/></svg>');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: calc(var(--input_height_secondary) - 6px);
+}
+input[type=radio]:checked::before {
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="10" height="10"><circle cx="5" cy="5" r="5"/></svg>');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: calc(var(--input_height_secondary) - 10px);
+}
+input[type=checkbox][disabled],
+input[type=radio][disabled]{
+	background: #e5e5e5;
+	border-color: #bbb9b9;
+}
+input[type=checkbox]:hover,
+input[type=radio]:hover {
+	background: #e5e5e5;
+}
+label {
+  /* handle label > input */
+  display: inline-flex;
+  align-items: center;
+  cursor: default;
+}

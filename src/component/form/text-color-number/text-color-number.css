@@ -1,0 +1,27 @@
+input, /* include: password, */
+input[type=text] {
+  /* override */
+  font: inherit;
+  color: inherit;
+  /* -- */
+  font-size: var(--input_button_font_size);
+  font-weight: var(--input_button_font_weight);
+  font-family: var(--input_font-family);
+  padding: var(--input_button_padding);
+  height: var(--input_button_height);
+}
+input:focus, /* include all input */
+input[type=text]:focus {
+  outline: var(--input_button_outline);
+  outline-offset: var(--input_button_outline-offset);
+}
+input[type=color] {
+  height: var(--input_button_height);
+  width: var(--input_button_height);
+  padding: 0;
+}
+@supports (-moz-appearance:none) {
+	input[type=color] {
+		padding: 3px 1px;
+  }
+}

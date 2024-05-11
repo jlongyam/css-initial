@@ -1,0 +1,28 @@
+input[type=image] {
+  vertical-align: middle;
+  padding: 0;
+  min-height: 24px;
+  min-width: 24px;
+  height: var(--input_image_size);
+  width: var(--input_image_size);
+}
+textarea:focus {
+  outline: var(--input_button_outline);
+  outline-offset: var(--input_button_outline-offset);
+}
+textarea {
+  /* override */
+  resize: vertical;
+  font: inherit;
+  color: inherit;
+  /**/
+  font-family: var(--input_font-family);
+  padding: var(--input_button_padding);
+  /*min-height: (line-height * 2) - (padding-top * 2 ) */
+  min-height: calc(48px + (var(--input_button_padding_v) * 2));
+  /* todo: resize-handler */
+  vertical-align: middle;
+}
+textarea:disabled {
+  resize: none;
+}

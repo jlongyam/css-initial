@@ -1,0 +1,36 @@
+select,
+option,
+[role=option] {
+  /* override */
+  cursor: pointer;
+  font: inherit;
+  color: inherit;
+  font-size: var(--input_button_font_size);
+  font-weight: var(--input_button_font_weight);
+  vertical-align: top;
+}
+select {
+  border-radius: 2px;
+  padding: var(--input_button_padding);
+  background-color: ButtonFace;
+  border: 1px solid gray;
+  height: var(--input_button_height);
+}
+select[multiple] {
+  overflow:auto;
+  height: auto;/* restore height */
+  padding: var(--input_button_padding_v);
+}
+select:focus {
+  outline: var(--input_button_outline);
+	outline-offset: var(--input_button_outline-offset);
+}
+select:hover {
+	background-color: #e5e5e5;
+}
+select[multiple] > option {
+	padding: 5px;
+}
+select[multiple] > option:hover {
+  background-color: silver;
+}

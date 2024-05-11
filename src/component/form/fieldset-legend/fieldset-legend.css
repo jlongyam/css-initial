@@ -1,0 +1,17 @@
+fieldset {
+  border: 1px solid silver; /* override */
+  margin: var(--base_margin-block);
+  padding: .5em;
+}
+legend {
+  margin-left: 0;
+  padding: 0 .25em;
+  border: 1px solid silver;
+  font-weight: 500;
+}
+legend > :is(h1,h2,h3,h4,h5,h6) {
+  margin: 0;
+}
+legend:has(>:is(h1,h2,h3,h4,h5,h6)) {
+  border: 0;
+}

@@ -1,0 +1,19 @@
+progress {
+  -webkit-appearance: none;
+  appearance: none;
+  border: 1px solid var(--progress_border-color);
+  border-radius: var(--progress_border-radius);
+  height: var(--progress_height);
+  background-color: var(--progress_track_color); /* firefox */
+}
+/* == chrome == */
+progress::-webkit-progress-bar {
+  background-color: var(--progress_track_color);
+}
+progress::-webkit-progress-value {
+  background-color: var(--progress_point_color);
+}
+/* == firefox */
+progress::-moz-progress-bar {
+  background-color: var(--progress_point_color);
+}

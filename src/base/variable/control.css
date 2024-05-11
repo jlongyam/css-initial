@@ -1,0 +1,8 @@
+:root {
+  /* == color == */
+    /* based of firefox dev-tool */
+  --color_control-face:    #e9e9ed;  /* chrome: #f0f0f0; */
+  --color_control-border:  #8f8f9d;  /* chrome: #808080; */
+  --color_control-hover:   #d0d0d7;  /* chrome: #e5e5e5; */
+  
+}
