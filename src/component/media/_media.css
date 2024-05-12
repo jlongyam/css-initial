@@ -1,0 +1,11 @@
+/* TODO: included in elements*/
+img,
+svg,
+video,
+canvas,
+audio,
+iframe,
+embed,
+object {
+  display: block;
+}

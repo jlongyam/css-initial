@@ -1,0 +1,12 @@
+input[list][type=color] {
+  min-width: calc(36px* 2);
+  background-color: #e9e9ed;
+  border-radius: 2px;
+  border-color: #696969;
+}
+input[list][type=time] {
+  position: relative;/* fix showing 'more ..' in chrome */
+}
+input[list][type=range] {
+  /* failed */
+}

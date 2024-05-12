@@ -1,1 +1,33 @@
-dialog {}
+dialog {
+  /* variable*/
+  --dialog_color-back: #fff;
+  --dialog_color-font: #000;
+  --dialog_border: 2px solid #fff;
+  --dialog_shadow: 0 1px 4px rgba(0,0,0,.2);
+  --dialog_padding: .5em;
+  --dialog_backdrop: rgba(0,0,0,0.2);
+  --dialog_position: 5% auto auto auto;
+  /* override */
+  background-color: var(--dialog_color-back);
+  color: var(--dialog_color-font);
+  border: var(--dialog_border);
+  width: fit-content;
+  height: fit-content;
+  left: 0;
+  right: 0;
+  box-shadow: var(--dialog_shadow);
+  padding: var(--dialog_padding);
+  margin: var(--dialog_position);
+  max-height: 75%;
+}
+dialog:-internal-dialog-in-top-layer::backdrop {
+  background-color: var(--dialog_backdrop);
+}
+/* extend */
+dialog:has(main) {
+  
+}
+dialog:has(main) > main {
+  height: 400px;
+  overflow: auto;
+}

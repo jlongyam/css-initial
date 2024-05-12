@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="../../../base/_export.css" rel="stylesheet">
+  <link href="../../../layout/_export.css" rel="stylesheet">
+  <link href="../../../utility/_export.css" rel="stylesheet">
+  <link href="../../_export.css" rel="stylesheet">
+  <script src="../../../tool/js/random.min.js" defer></script>
+  <script src="../../../utility/helper/dev.js" defer></script>
+  <title>audio</title>
+</head>
+<body class="page">
+  <div>
+    <div class="code" data-name="audio[controls]"></div>
+    <div class="empty"></div>
+    <audio controls autorun=false>
+      <source src="" type="audio/mpeg"   onload="return false">
+      <source src="" type="audio/ogg"   onload="return false">
+      <p>Download:<br>
+        <a href="file.mp3">MP3</a> or<br>
+        <a href="file.ogg">OGG</a> audio.
+      </p>
+    </audio>
+    <button>Button</button>
+    <div class="empty"></div>
+  </div>
+  <div>
+    <div class="code" data-name="figure figcaption + audio"></div>
+    <div class="empty"></div>
+    <figure>
+      <figcaption>Listen to the T-Rex:</figcaption>
+      <audio controls src="" onload="return false">
+        <a href="file.mp3"> Download audio </a>
+      </audio>
+    </figure>
+    <div class="empty"></div>
+  </div>
+</body>
+</html>

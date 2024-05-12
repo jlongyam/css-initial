@@ -19,6 +19,7 @@ input[type=color] {
   height: var(--input_button_height);
   width: var(--input_button_height);
   padding: 0;
+  vertical-align: middle;
 }
 @supports (-moz-appearance:none) {
 	input[type=color] {

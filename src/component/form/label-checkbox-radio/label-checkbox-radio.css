@@ -60,8 +60,11 @@ input[type=radio]:hover {
 	background: #e5e5e5;
 }
 label {
+  --label_font-weight: 400;
   /* handle label > input */
   display: inline-flex;
   align-items: center;
   cursor: default;
+  font-weight: var(--label_font-weight); /* public */
+  white-space: break-spaces;
 }

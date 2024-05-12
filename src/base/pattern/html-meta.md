@@ -8,7 +8,7 @@
 	minimum-scale=1.0
 	maximum-scale=1.0
 	shrink-to-fit=no
-	user-scalable=no
+	user-scalable=no    [!]
 	viewport-fit=cover
 -->
 ```

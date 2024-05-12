@@ -1,0 +1,15 @@
+/*Note: internal background cannot be change in chrome
+    consider other control follow that color
+*/
+audio {
+  --audio_height: 36px;
+  display: block;
+  height: var(--audio_height);
+  @supports(-webkit-appearance:none) {
+    /* color picker devtool */
+    background-color: #f1f3f4;
+    border: 1px solid #767676;
+    border-radius: 2px;
+    font-family: monospace;
+  }
+}

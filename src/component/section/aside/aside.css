@@ -14,10 +14,12 @@ aside {
 }
 aside::after {
   font-family: monospace;
-  content: '\2261';
-  font-size: 24px;
+  content: '\021da';
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 0;
   position: absolute;
-  top: -1px;
+  top: 0;
   right: 0;
   border: 1px solid silver;
   width: 36px;

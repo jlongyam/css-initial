@@ -1,0 +1,11 @@
+/*
+  theme         -> :root
+  base          -> html
+  config/public -> body
+  private       -> type-element
+  specific      -> item-element
+*/
+input {
+  --input_height: 36px;
+  
+}
