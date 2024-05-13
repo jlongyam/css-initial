@@ -1,1 +1,7 @@
 @import 'audio/audio.css';
+@import 'video/video.css';
+@import 'img/img.css';
+@import 'svg/svg.css';
+@import 'picture/picture.css';
+@import 'object/object.css';
+@import 'embed/embed.css';

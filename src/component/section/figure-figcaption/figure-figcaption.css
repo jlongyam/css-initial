@@ -1,8 +1,7 @@
 figure,
 figcaption {
   padding: var(--base_padding-section);
-  display: flex;
-  flex-direction: column;
+  display: block;
 }
 figcaption {
   border-bottom: var(--base_border_solid);

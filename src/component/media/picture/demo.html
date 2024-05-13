@@ -11,18 +11,25 @@
   <script src="../../../utility/helper/dev.js" defer></script>
 </head>
 <body class="page">
+  
   <div>
-    <div class="code" data-name="embed[type=video/webm]"></div>
+    <div class="code" data-name="picture source[srcset][media] img"></div>
     <div class="empty"></div>
-    <embed type="video/webm" src="../../../asset/sample/flower.webm">
+    <picture>
+      <source srcset="../../../asset/sample/128x128.png" media="(orientation: portrait)" />
+      <img src="../../../asset/sample/640x480.png" />
+    </picture>
     <div class="empty"></div>
   </div>
   <div>
-    <div class="code" data-name="figure embed[type=application/pdf]"></div>
+    <div class="code" data-name="figure figcaption + picture"></div>
     <div class="empty"></div>
     <figure>
-      <figcaption>PDF</figcaption>
-      <embed type="application/pdf" src="../../../asset/sample/In-CC0.pdf">
+      <figcaption>Picture</figcaption>
+      <picture>
+        <source srcset="../../../asset/sample/128x128.png" media="(orientation: portrait)" />
+        <img src="../../../asset/sample/640x480.png" />
+      </picture>
     </figure>
     <div class="empty"></div>
   </div>

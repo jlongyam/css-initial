@@ -1,0 +1,13 @@
+video {
+  --video_width: auto;
+  --video_height: auto;
+  /* override */
+  display: block;
+  max-inline-size: 100%;
+  block-size: auto;
+  /* style */
+  width: var(--video_width);
+  height: var(--video_height);
+  object-position: center;
+  object-fit: cover;
+}

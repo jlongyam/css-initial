@@ -1,13 +1,13 @@
-embed {
-  --embed_width: -webkit-fill-available;
-  --embed_height: revert-layer;
+object {
+  --object_width: fit-content;
+  --object_height: fit-content;
   /* override */
   display: block;
   max-inline-size: 100%;
-  /*block-size: auto;*/
+  block-size: auto;
   /* style */
-  width: var(--embed_width);
-  height: var(--embed_height);
+  width: var(--object_width);
+  height: var(--object_height);
   object-fit: cover;
   object-position: center;
   &[type="application/pdf"] {

@@ -1,0 +1,16 @@
+svg {
+  --svg_width: -webkit-fill-available;
+  --svg_height: -webkit-fill-available;
+  /* override */
+  display: block;
+  max-inline-size: 100%;
+  block-size: auto;  
+  /* style */
+  width: var(--svg_width);
+  height: var(--svg_height);
+  object-fit: none;
+  object-position: center;
+  &:not([fill]) {
+    fill: currentColor;
+  }
+}
