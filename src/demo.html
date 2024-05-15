@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Demo</title>
+  <link href="_export.css" rel="stylesheet">
+  <link href="utility/_export.css" rel="stylesheet">
+  <script src="asset/js/require.min.js"></script>
+</head>
+<body class="page">
+<script>
+require([
+  'asset/js/prototypes.js',
+  'asset/js/selector.js',
+  'asset/js/loadCheck.js',
+  'asset/js/loadCSS.js',
+  'asset/js/removeCSS.js',
+  'asset/js/random.min.js',
+  'asset/js/router.js',
+],()=> {
+  const links = {
+    typography: {
+      'a-cite': '/component/typography/inline/a-cite/',
+      'sub-sup-small': '/component/typography/inline/sub-sup-small/'
+    }
+  }
+  const stylesheet = {
+    home : [
+      '_export.css',
+      'utility/_export.css',
+    ],
+    compare: [
+      'global.css',
+      'component/media/iframe/iframe.css',
+      'utility/switch/switch.css',
+      'utility/demo/compare/compare.css'
+    ],
+    demo: [
+      '_export.css',
+      'utility/_export.css',
+      'utility/demo/compare/fake.css'
+    ]
+  }
+  const page = {}
+  page.notFound = ()=> {
+    document.body.innerHTML = `
+      <h1>404</h1>
+      <hr>
+      <p>Page requested: <b>${location.hash}</b></p>
+      <p><a href="javascript:history.back()">Go back</a></p>
+    `
+  }
+  page.home = ()=> {
+    removeCSS(stylesheet.compare)
+    loadCSS(stylesheet.home)
+    document.body.innerHTML = `
+      <header>
+        <h1>Demo</h1>
+        <nav>
+          <a href="#/home">HOME</a> .
+          <a href="#/demo/mode=unstyle,debug">Demo</a> .
+          <a href="#/compare/source?foo/bar/baz">Compare</a> .
+          <a href="demo.html">Reset</a>
+        </nav>
+      </header>
+      <main>
+        ${Object.keys(links).map((title)=> {
+          return `
+            <section class="box">
+              <h2>${title.toUpperFirst()}</h2>
+              <ul>
+                ${Object.keys(links[title]).map((item,n)=> {
+                  return `<li><a href="#${links[title][item]}">${Object.keys(links[title])[n]}</a></li>`
+                }).join('')}
+              </ul>
+            </section>
+          `  
+        }).join('')}
+      <main>
+    `
+  }
+  page.demo = (mode)=> {
+    loadCSS(stylesheet.demo)
+    require(['utility/demo/compare/fake.js'], (data)=> {
+      document.body.innerHTML = data.content
+      let mode_style = mode.option.split('=')[1].split(',')
+      mode_style.forEach((type)=> {
+        if(type == 'unstyle') {
+          checkStylesheet('utility/demo/compare/fake.css', ((el)=> { el.remove()} ))
+        }
+        else if( type === 'debug' ) {
+          document.body.classList.add('debug')
+        }
+        else {
+          loadCSS(stylesheet.demo)
+          document.body.classList.remove('debug')
+        }
+      })
+    })
+  }
+  page.compare = (option, query)=> {
+    removeCSS(stylesheet.home)
+    removeCSS(stylesheet.demo)
+    loadCSS(stylesheet.compare)
+    require(['utility/demo/compare/content.js'], (data)=> {
+      document.body.innerHTML = data.content
+      console.log(option)
+      console.log(query)
+      iframe_1.src = 'demo.html#/component/typography/inline/a-cite/'
+      console.log(typeof iframe_1)
+    })
+  }
+  let router = new Navigo('/', { hash: true })
+  let router_map = {
+    "/home": ()=> { page.home() },
+    "/demo/:option": (mode)=> { page.demo(mode) },
+    "/compare/:search": (option, query)=> { page.compare(option, query) }
+  }
+  function script_content() { return location.hash.substring(2)+'content.js' }
+  Object.keys(links).map((i)=> {
+    Object.keys(links[i]).map((ii)=> {
+      router_map[links[i][ii]] = ()=> {
+        require([script_content()], (data)=> {
+          document.body.innerHTML = data.content
+        })
+      }
+    })
+  })
+  router.on(router_map)
+  //router.resolve()
+  //router.notFound( ()=> { page.notFound() } )
+  //router.navigate('/home')
+  if( location.hash.length < 1 ) {
+    location.href = "#/home"
+    //router.navigate('/home')
+    //router.resolve()
+  }
+  //else {
+    router.resolve(location.hash)
+    //}
+})
+</script>
+</body>
+</html>

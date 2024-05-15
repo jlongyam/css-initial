@@ -1,39 +1,61 @@
 button,
 input[type=button],
 input[type=reset], 
-input[type=submit],
-[role=button] {
-  /* override */
+input[type=submit] {
   -webkit-appearance: button;
   cursor: pointer;
-  font: inherit;
+  font: var(--input_font);
   color: inherit;
-  /* styling */
-  font-size: var(--input_button_font_size);
-  font-weight: var(--input_button_font_weight);
-  padding: var(--input_button_padding);
-  height: var(--input_button_height);
-}
-button[disabled],
-input[disabled]
-[role=button][disabled] {
-  cursor: not-allowed;
-}
-button:focus,
-input[type=button]:focus,
-input[type=reset]:focus,
-input[type=submit]:focus,
-input[type=file]:focus,
-[role=button]:focus {
-	outline: var(--input_button_outline);
-	outline-offset: var(--input_button_outline-offset);
+  padding: var(--input_padding);
+  height: var(--input_height);
+  border: 1px solid var(--input_color-border);
+  border-radius: var(--input_radius);
+  background-color: var(--input_color-face);
+  vertical-align: middle;
+  &:hover {
+    background-color: var(--input_color-hover);
+  }
+  &[disabled] {
+    cursor: not-allowed;
+    border-color: var(--input_color-disabled);
+    color: var(--input_font-disabled);
+    &:hover {
+      background-color: var(--input_color-face);
+    }
+  }
+  &:focus {
+    outline: var(--input_outline);
+	  outline-offset: var(--input_outline-offset);
+  }
 }
 input[type=file] {
-	font-size: var(--input_button_font_size);
-	font-weight: var(--input_button_font_weight);
-  padding:0; /* reset */
-}
-input[type=file]::file-selector-button {
-	padding: var(--input_button_padding);
-	height: var(--input_button_height);
+	font: var(--input_font);
+	color: inherit;
+  padding: 0;
+  &:focus {
+    outline: var(--input_outline);
+	  outline-offset: var(--input_outline-offset);
+  }
+  &[disabled] {
+    cursor: not-allowed;
+    border-color: var(--input_color-disabled);
+    color: var(--input_font-disabled);
+    &::file-selector-button {
+      color: var(--input_font-disabled);
+    }
+    &:hover::file-selector-button {
+      background-color: var(--input_color-face);
+    }
+  }
+  &::file-selector-button {
+    border: 1px solid var(--input_color-border);
+    border-radius: var(--input_radius);
+    background-color: var(--input_color-face);
+    padding: var(--input_padding);
+	  height:  var(--input_height);
+	  font: inherit;
+  }
+  &:hover::file-selector-button {
+	  background-color: var(--input_color-hover);
+	}
 }

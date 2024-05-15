@@ -1,8 +1,4 @@
 header {
-  --base_color-bg_header: #dddddd;
-  background-color: var(--base_color-bg_header);
-  padding: 1em;
-}
-header > :first-of-type {
-  margin: 0;
+  background-color: var(--header-bg);
+  padding: var(--padding-block);
 }

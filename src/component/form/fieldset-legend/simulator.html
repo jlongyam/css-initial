@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>simulator</title>
+  <base target="_blank">
+  <link href="../../../global.css" rel="stylesheet">
+  <link href="../../../utility/layout/box/_export.css" rel="stylesheet">
+  <script src="../../../utility/js/gap.js"></script>
+</head>
+<body class="page">
+<div id="div"></div>
+<script>
+  const demo_path = 'component/form/fieldset-legend/demo.html'
+  const sim_path = '../../../utility/demo/simulator/'
+  const sim_size = [
+    'xx-small',
+    'x-small',
+    'small',
+    'medium',
+    'large',
+    'x-large',
+    'xx-large'
+  ]
+  sim_size.forEach((i)=> {
+    div.innerHTML += `<div class="box mb_5px"><a href="${sim_path+i+'.html?'+demo_path}">${i}</a></div>`
+  })
+</script>
+</body>

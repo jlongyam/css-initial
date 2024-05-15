@@ -5,6 +5,6 @@
 @import 'text-color-number/text-color-number.css';
 @import 'range/range.css';
 @import 'progress/progress.css';
-@import 'textarea-image/textarea-image.css';
 @import 'meter/meter.css';
-@import 'date/date.css'
+@import 'textarea-image/textarea-image.css';
+@import 'list-datalist-option/list-datalist-option.css';

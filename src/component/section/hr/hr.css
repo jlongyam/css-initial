@@ -6,5 +6,5 @@ hr {
   color: inherit;
   /* style */
   overflow: visible;
-  color: silver;
+  color: var(--color-border);
 }

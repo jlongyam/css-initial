@@ -1,25 +1,34 @@
-input, /* include: password, */
+input,
 input[type=text] {
-  /* override */
-  font: inherit;
+  font: var(--input_font-code);
   color: inherit;
-  /* -- */
-  font-size: var(--input_button_font_size);
-  font-weight: var(--input_button_font_weight);
-  font-family: var(--input_font-family);
-  padding: var(--input_button_padding);
-  height: var(--input_button_height);
-}
-input:focus, /* include all input */
-input[type=text]:focus {
-  outline: var(--input_button_outline);
-  outline-offset: var(--input_button_outline-offset);
+  padding: var(--input_padding);
+  height: var(--input_height);
+  border: 1px solid var(--input_color-border);
+  border-radius: var(--input_radius);
+  &:focus {
+    outline: var(--input_outline);
+    outline-offset: var(--input_outline-offset);
+  }
+  &[disabled] {
+    border-color: var(--input_color-disabled);
+    color: var(--input_font-disabled);
+    cursor: not-allowed;
+    background-color: var(--input_text-disabled);
+  }
 }
 input[type=color] {
-  height: var(--input_button_height);
-  width: var(--input_button_height);
+  height: var(--input_height);
+  width: var(--input_height);
   padding: 0;
   vertical-align: middle;
+  background-color: var(--input_color-face);
+  &[disabled], &:hover[disabled] {
+    background-color: var(--input_color-face);
+  }
+  &:hover {
+    background-color: var(--input_color-hover);
+  }
 }
 @supports (-moz-appearance:none) {
 	input[type=color] {

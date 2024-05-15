@@ -1,9 +1,7 @@
-figure,
-figcaption {
-  padding: var(--base_padding-section);
+figure {
+  padding: var(--padding-block);
   display: block;
-}
-figcaption {
-  border-bottom: var(--base_border_solid);
-  font-weight: bold;
+  > figcaption {
+    font-weight: bold;
+  }
 }

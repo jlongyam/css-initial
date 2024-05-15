@@ -3,12 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="../../../base/_export.css" rel="stylesheet">
-  <link href="../../../layout/_export.css" rel="stylesheet">
+  <title>meter</title>
+  <link href="../../../global.css" rel="stylesheet">
   <link href="../../../utility/_export.css" rel="stylesheet">
-  <link href="../../_export.css" rel="stylesheet">
+  <link href="../button-file/button-file.css" rel="stylesheet">
+  <link href="../label-checkbox-radio/label-checkbox-radio.css" rel="stylesheet">
+  <link href="meter.css" rel="stylesheet">
   <script src="../../../tool/js/random.min.js" defer></script>
-  <script src="../../../utility/helper/dev.js" defer></script>
+  <script src="../../../utility/demo/dev.js" defer></script>
 </head>
 <body class="page">
   <div>
@@ -22,26 +24,14 @@
     <div class="code" data-name="meter (warning)"></div>
     <div class="empty"></div>
     <meter min="0" max="100" low="33" high="66" optimum="80" value="50">warning</meter>
+    <input type=button value=Button>
     <div class="empty"></div>
   </div>
   <div>
     <div class="code" data-name="meter (danger)"></div>
     <div class="empty"></div>
     <meter low="69" high="80" max="100" value="84">danger</meter>
-    <div class="empty"></div>
-  </div>
-  <div>
-    <div class="code" data-name="input[type=checkbox]"></div>
-    <div class="empty"></div>
-    <div class="flex" style="height:36px">
-      <input type=checkbox>
-    </div>
-    <div class="empty"></div>
-  </div>
-  <div>
-    <div class="code" data-name="input[type=button]"></div>
-    <div class="empty"></div>
-    <input type=button value=Button>
+    <input type=checkbox>
     <div class="empty"></div>
   </div>
 </body>

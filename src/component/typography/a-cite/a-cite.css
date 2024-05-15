@@ -1,0 +1,42 @@
+a {
+  font-weight: bold;
+  text-underline-offset: 0.2ex;
+}
+a:link {
+  color: var(--a_link);
+  text-decoration: underline;
+}
+a:visited {
+  color: var(--a_visited);
+}
+a[href]:active {
+  color: var(--a_active);
+}
+a[href~="#"] {
+  color: var(--a_fragment);
+}
+a[target] {
+  color: var(--a_target);
+}
+a[href^="mailto"] {
+  text-decoration: none;
+  border: 1px dashed var(--color-border);
+  padding: 0 3px;
+}
+a[href^="tel"] {
+  text-decoration: none;
+  font-family: var(--font-code);
+  border: 1px solid var(--color-border);
+  padding: 0 3px;
+}
+cite {
+  font-style: normal;
+  font-weight: 500;
+  padding: 0 2px;
+}
+cite:hover {
+  background-color: whitesmoke;
+}
+nav a:link {
+  text-decoration: none;
+}

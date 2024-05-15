@@ -1,8 +1,6 @@
 footer {
-  --base_color-bg_footer: #363636;
-  --base_color-fg_footer: #ebebeb;
-  background-color: var(--base_color-bg_footer);
-  color:var(--base_color-fg_footer);
+  background-color: var(--footer-bg);
+  color:var(--footer-color);
   display: flex;
   flex-direction: column;
   align-items: center;

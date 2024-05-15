@@ -3,12 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="../../../base/_export.css" rel="stylesheet">
-  <link href="../../../layout/_export.css" rel="stylesheet">
+  <title>text-color-number</title>
+  <link href="../../../global.css" rel="stylesheet">
   <link href="../../../utility/_export.css" rel="stylesheet">
-  <link href="../../_export.css" rel="stylesheet">
-  <script src="../../../tool/js/random.min.js" defer></script>
-  <script src="../../../utility/helper/dev.js" defer></script>
+  <link href="text-color-number.css" rel="stylesheet">
+  <script src="../../../utility/demo/dev.js" defer></script>
 </head>
 <body class="page">
   <div>
@@ -77,6 +76,37 @@
 		<input type="email" placeholder="mail@your.site"><br>
 		<input type="email" value="foo@gmail.com">
 		<input type="email" disabled>
+    <div class="empty"></div>
+  </div>
+  <div>
+    <div class="code" data-name="input[type=date]"></div>
+    <div class="empty"></div>
+    <input type="date" value="2018-07-22" min="2018-01-01" max="2018-12-31">
+    <input type="date" value="2018-07-22" disabled>
+    <div class="empty"></div>
+  </div>
+  <div>
+    <div class="code" data-name="input[type=datetime-local]"></div>
+    <div class="empty"></div>
+    <input type="datetime-local" value="2018-06-12T19:30">
+    <div class="empty"></div>
+  </div>
+  <div>
+    <div class="code" data-name="input[type=month]"></div>
+    <div class="empty"></div>
+    <input type="month" min="2022-06" max="2022-09" required>
+    <div class="empty"></div>
+  </div>
+  <div>
+    <div class="code" data-name="input[type=week]"></div>
+    <div class="empty"></div>
+    <input type="week" min="2017-W01" max="2017-W52">
+    <div class="empty"></div>
+  </div>
+  <div>
+    <div class="code" data-name="input[type=time]"></div>
+    <div class="empty"></div>
+    <input type="time" min="09:00" max="18:00" required>
     <div class="empty"></div>
   </div>
 </body>

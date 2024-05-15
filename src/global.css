@@ -1,0 +1,125 @@
+:root {
+  /* == Global-config == */
+  --font-primary: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Ubuntu, Cantarell, Oxygen, 'Helvetica Neue', Arial, sans-serif;
+  --font-code: SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', 'Roboto Mono', 'Ubuntu Monospace', 'Oxygen Mono', 'Liberation Mono', monospace;
+  --font-size: 1rem;
+  --line-height: 1.5em;
+  --tab-size: 4;
+  --color-selection: MediumSlateBlue;
+  --color-border: Silver;
+}
+*,*::before,*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	position: relative;
+	background-repeat: no-repeat;
+  text-decoration: inherit;
+  vertical-align: baseline;
+  @media (prefers-reduced-motion: reduce) {
+    animation-delay: -1ms !important;
+    animation-duration: 1ms !important;
+    animation-iteration-count: 1 !important;
+    background-attachment: initial !important;
+    scroll-behavior: auto !important;
+    transition-delay: 0s !important;
+    transition-duration: 0s !important;
+  }
+}
+::selection {
+  background-color: var(--color-selection);
+  color: #000;
+  text-shadow: none;
+}
+:focus-visible{
+  outline: 3px solid Highlight;
+  outline-offset: 2px;
+  scroll-margin-block: 10vh;
+}
+html {
+  font: normal 400 16px/24px monospace;
+  height: 100%;
+  background-color: silver;
+  color: black;
+	color-scheme: dark light;
+	overflow: hidden;
+	overflow-wrap: break-word;
+  -webkit-tap-highlight-color: transparent;
+  @media (prefers-reduced-motion: no-preference) {
+    &:focus-within {
+      scroll-behavior: smooth;
+    }
+  }
+}
+body {
+  display: block;
+  margin: 0;
+  font: normal 400 1rem/1.5em var(--font-primary);
+  font-family: var(--base_font-primary);
+  font-size: var(--base_font-size);
+  line-height: var(--base_line-height);
+  height: 100%;
+  overflow: auto;
+	-webkit-text-size-adjust: none;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	word-break: break-word;
+	cursor: default;
+	background-color: white;
+	-moz-tab-size: var(--base_tab-size);
+  tab-size: var(--base_tab-size);
+}
+/* == Theme-default == */
+:root {
+  /* -- Typography -- */
+  --a_link: DodgerBlue;
+  --a_visited: RoyalBlue;
+  --a_active: Red;
+  --a_fragment: Purple;
+  --a_target: DeepSkyBlue;
+  /* -- gap -- */
+  --margin-block: .5em 0;
+  --padding-block: 1em;
+  --padding-section: .5em;
+  /* -- element -- */
+  --header-bg: #fbfbfb;
+  --footer-bg: #363636;
+  --footer-color: #ebebeb;
+  --article-shadow: 0px 0px 2px 0px black;
+  --table_color-bg_col_even: inherit;
+  --table_color-bg_col_odd: #f9f9f9;
+  --table_caption_position: top;
+  --table_caption_justify: left;
+  --table_border_width: 1px;
+  --table_border_style: solid;
+  --table_border_color: silver;
+  --table_border: 1px solid silver;
+  --table_padding: 5px;
+  --input_font: normal 500 1rem/1.5em var(--font-primary);
+  --input_font-code: normal 500 1rem/1.5em var(--font-code);
+  --input_gap: 5px;
+  --input_padding: 2px var(--input_gap);
+  --input_height: 36px;
+  --input_height-pointer: 18px;
+  --input_outline: 3px solid var(--color-border);
+  --input_outline-offset: 1px;
+  --input_radius: 2px;
+  --input_color-face: #e9e9ed;
+  --input_color-border: #8f8f9d;
+  --input_color-hover: #e3e3e3;
+  --input_color-disabled: #cfcfcf;
+  --input_font-disabled: #afafaf;
+  --input_text-disabled: #fafafa;
+  --input_range-width: 150px;
+  --input_image-size: 36px;
+  --option_padding: 5px;
+  --option_color-hover: #c0c0c0;
+  --progress_color-value: green;
+  --meter_width: 150px;
+  --meter_color-safe: #00ab60;
+  --meter_color-warning: #ffbd4f;
+  --meter_color-danger: #e22850;
+  --textarea_width: 200px;
+  /* -- special -- */
+  --list-color: Gray;
+}

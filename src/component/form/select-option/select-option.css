@@ -1,36 +1,46 @@
 select,
-option,
-[role=option] {
-  /* override */
+option {
   cursor: pointer;
-  font: inherit;
+  font: var(--input_font);
   color: inherit;
-  font-size: var(--input_button_font_size);
-  font-weight: var(--input_button_font_weight);
   vertical-align: top;
 }
 select {
-  border-radius: 2px;
-  padding: var(--input_button_padding);
-  background-color: ButtonFace;
-  border: 1px solid gray;
-  height: var(--input_button_height);
-}
-select[multiple] {
-  overflow:auto;
-  height: auto;/* restore height */
-  padding: var(--input_button_padding_v);
-}
-select:focus {
-  outline: var(--input_button_outline);
-	outline-offset: var(--input_button_outline-offset);
-}
-select:hover {
-	background-color: #e5e5e5;
-}
-select[multiple] > option {
-	padding: 5px;
-}
-select[multiple] > option:hover {
-  background-color: silver;
+  border-radius: var(--input_radius);
+  padding: var(--input_padding);
+  background-color: var(--input_color-face);
+  border: 1px solid var(--input_color-border);
+  border-radius: var(--input_radius);
+  height: var(--input_height);
+  &[multiple] {
+    overflow:auto;
+    height: auto;
+    padding: 5px;
+    > option {
+      padding: var(--option_padding);
+    }
+    > option:hover {
+      background-color: var(--option_color-hover);
+    }
+  }
+  &:focus {
+    outline: var(--input_outline);
+	  outline-offset: var(--input_outline-offset);
+  }
+  &:hover {
+	  background-color: var(--input_color-hover);
+	  &[disabled] {
+	    background-color: var(--input_color-face);
+	    cursor: not-allowed;
+	    > option {
+        background-color: inherit;
+        cursor: inherit;
+      }
+	  }
+  }
+  &[disabled] {
+    border-color: var(--input_color-disabled);
+    color: var(--input_font-disabled);
+    cursor: not-allowed;
+  }
 }

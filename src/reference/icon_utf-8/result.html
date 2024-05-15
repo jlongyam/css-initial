@@ -88,24 +88,6 @@ result.html(`
 `)
 </script>
 </section>
-<script src="currency.js"></script>
-<section>
-<script>
-arr = data_ic_currency
-result.html(`
-<div class="grid">
-  <h3>Currency</h3>
-  <div class="group">
-  ${arr.map((i,n)=> {
-    return `
-      <i class="icon" title="${arr[n].name+'\n'+arr[n].hexCode.replace('&','&amp;')+'\n'+arr[n].unicode}">${arr[n].hexCode}</i>
-    `
-  }).join('')}
-  </div>
-</div>
-`)
-</script>
-</section>
 <script src="arrow.js"></script>
 <section>
 <script>

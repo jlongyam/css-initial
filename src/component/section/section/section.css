@@ -1,12 +1,13 @@
 section {
-  --base_border_section: 1px solid silver; 
-  padding: .5em;
-  border-top: var(--base_border_section);
-  border-bottom: var(--base_border_section)
-}
-section:not(:first-of-type) {
-  border-top: 0;
-}
-section:last-of-type {
-  border-bottom: 0;
+  padding: var(--padding-block);
+  &:not([class]) {
+    border-top: 1px solid var(--color-border);
+    border-bottom: 1px solid var(--color-border);
+    &:not(:first-of-type) {
+      border-top: 0;
+    }
+    &:last-of-type {
+      border-bottom: 0;
+    }
+  }
 }

@@ -5,6 +5,7 @@
 .switch-checkbox,
 .switch-radio {
   display: none;
+  visibility: hidden;
 }
 .switch-target {
   visibility: hidden;

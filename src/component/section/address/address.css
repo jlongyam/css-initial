@@ -1,0 +1,7 @@
+address {
+  margin: var(--margin-block);
+  overflow-wrap: break-word;
+  font-style: normal;
+  padding: var(--padding-block);
+  border: 1px dotted var(--color-border);
+}
