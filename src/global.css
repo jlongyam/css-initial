@@ -1,4 +1,5 @@
 :root {
+  color-scheme: light dark; /* for light-dark() */ 
   /* == Global-config == */
   --font-primary: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Ubuntu, Cantarell, Oxygen, 'Helvetica Neue', Arial, sans-serif;
   --font-code: SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', 'Roboto Mono', 'Ubuntu Monospace', 'Oxygen Mono', 'Liberation Mono', monospace;
@@ -38,7 +39,12 @@
 }
 html {
   font: normal 400 16px/24px monospace;
-  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
   background-color: silver;
   color: black;
 	color-scheme: dark light;
@@ -58,6 +64,7 @@ body {
   font-size: var(--base_font-size);
   line-height: var(--base_line-height);
   height: fit-content;
+  overflow: auto;
 	-webkit-text-size-adjust: none;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;

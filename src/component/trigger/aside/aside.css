@@ -1,6 +1,6 @@
-*:has(aside) {
-  position: relative;
-  min-height: 36px;
+:has( > aside) {
+  min-height: 37px;
+  overflow: hidden;
 }
 aside {
   position: absolute;
@@ -40,10 +40,10 @@ aside:hover::after {
   display: none;
 }
 /* -- nav =compound= */
-aside > nav {
+/*aside > nav {
   height: 100%;
   border: none;
 }
 aside > header h4 {
    margin: 0;
-}
+}*/

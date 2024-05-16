@@ -2,14 +2,15 @@ dialog {
   background-color: #fff;
   color: #000;
   border: 2px solid #fff;
-  width: fit-content;
-  height: fit-content;
-  left: 0;
+  position: absolute;
+  top: 0;
   right: 0;
+  bottom: 0;
+  left: 0;
   box-shadow: 0 1px 4px rgba(0,0,0,.2);
-  margin: 10vh auto auto auto;;
-  max-height: 80vh;
-  max-width: 80vw;
+  margin: 25% auto auto auto;
+  max-width: 80%;
+  max-height: 70%;
   &:-internal-dialog-in-top-layer::backdrop {
     background-color: rgba(0,0,0,0.1);
   }
