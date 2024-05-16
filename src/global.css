@@ -38,11 +38,10 @@
 }
 html {
   font: normal 400 16px/24px monospace;
-  height: 100%;
+  height: 100vh;
   background-color: silver;
   color: black;
 	color-scheme: dark light;
-	overflow: hidden;
 	overflow-wrap: break-word;
   -webkit-tap-highlight-color: transparent;
   @media (prefers-reduced-motion: no-preference) {
@@ -58,8 +57,7 @@ body {
   font-family: var(--base_font-primary);
   font-size: var(--base_font-size);
   line-height: var(--base_line-height);
-  height: 100%;
-  overflow: auto;
+  height: fit-content;
 	-webkit-text-size-adjust: none;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
@@ -120,6 +118,10 @@ body {
   --meter_color-warning: #ffbd4f;
   --meter_color-danger: #e22850;
   --textarea_width: 200px;
+  --iframe_width: 100%;
+  --iframe_height: 300px;
+  --iframe_border: 1px solid var(--color-border);
+  --audio_width: 300px;
   /* -- special -- */
   --list-color: Gray;
 }

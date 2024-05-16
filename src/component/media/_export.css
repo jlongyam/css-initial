@@ -3,6 +3,6 @@
 @import 'img/img.css';
 @import 'svg/svg.css';
 @import 'picture/picture.css';
-@import 'object/object.css';
-@import 'embed/embed.css';
 @import 'iframe/iframe.css';
+@import 'embed/embed.css';
+@import 'object/object.css';

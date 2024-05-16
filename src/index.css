@@ -1,2 +1,68 @@
 @charset "UTF-8";
 @import "global.css";
+/* @import "component/component/_export.css";
+  */
+  /* @import url("typography/_export.css");
+    */
+@import "component/typography/a-cite/a-cite.css";
+@import "component/typography/sub-sup-small/sub-sup-small.css";
+@import "component/typography/code-samp-output/code-samp-output.css";
+@import "component/typography/abbr-dfn/abbr-dfn.css";
+@import "component/typography/b-i-u-s/b-i-u-s.css";
+@import "component/typography/del-ins/del-ins.css";
+@import "component/typography/strong-em/strong-em.css";
+@import "component/typography/var-time-data/var-time-data.css";
+@import "component/typography/q-mark-kbd/q-mark-kbd.css";
+@import "component/typography/ruby-rp-rt/ruby-rp-rt.css";
+  /* @import url("section/_export.css");
+    */
+@import "component/section/hr/hr.css";
+@import "component/section/header/header.css";
+@import "component/section/footer/footer.css";
+@import "component/section/section/section.css";
+@import "component/section/article/article.css";
+@import "component/section/main/main.css";
+@import "component/section/figure-figcaption/figure-figcaption.css";
+@import "component/section/address/address.css";
+@import "component/section/blockquote/blockquote.css";
+@import "component/section/hgroup/hgroup.css";
+@import "component/section/p/p.css";
+@import "component/section/h1-h6/h1-h6.css";
+@import "component/section/pre/pre.css";  
+  /* @import url("list/_export.css");
+    */
+@import "component/list/li-ol-ul-menu/li-ol-ul-menu.css";
+@import "component/list/dl-dt-dd/dl-dt-dd.css";
+@import "component/list/nav/nav.css";
+  /* @import url("trigger/_export.css");
+    */
+@import "component/trigger/details-summary/details-summary.css";
+@import "component/trigger/aside/aside.css";   
+  /* @import url("table/_export.css");
+    */
+@import "component/table/table.css"; 
+  /* @import url("form/_export.css");
+    */
+@import "component/form/fieldset-legend/fieldset-legend.css";
+@import "component/form/button-file/button-file.css";
+@import "component/form/select-option/select-option.css";
+@import "component/form/label-checkbox-radio/label-checkbox-radio.css";
+@import "component/form/text-color-number/text-color-number.css";
+@import "component/form/range/range.css";
+@import "component/form/progress/progress.css";
+@import "component/form/meter/meter.css";
+@import "component/form/textarea-image/textarea-image.css";
+@import "component/form/list-datalist-option/list-datalist-option.css";
+  /* @import url("media/_export.css");
+    */
+@import "component/media/audio/audio.css";
+@import "component/media/video/video.css";
+@import "component/media/img/img.css";
+@import "component/media/svg/svg.css";
+@import "component/media/picture/picture.css";
+@import "component/media/iframe/iframe.css";
+@import "component/media/embed/embed.css";
+@import "component/media/object/object.css";
+  /* @import url("script/_export.css");
+    */
+@import "component/script/dialog/dialog.css";

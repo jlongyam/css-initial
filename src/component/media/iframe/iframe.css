@@ -1,12 +1,7 @@
 iframe {
-  --iframe_width: 100%;
-  --iframe_height: auto;
-  --iframe_border: 1px solid silver;
-  /* override */
   display: block;
   max-inline-size: 100%;
   block-size: auto;
-  /* style */
   border: var(--ifame_border);
   width: var(--iframe_width);
   height: var(--iframe_height);

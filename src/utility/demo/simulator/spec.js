@@ -51,6 +51,6 @@ document.addEventListener('DOMContentLoaded', ()=> {
     iframe.src = root+target
   }
   else {
-    iframe.src = 'example.html'
+    iframe.src = '../sample/example.html'
   }
 })

@@ -7,8 +7,10 @@
   <link href="../../../global.css" rel="stylesheet">
   <link href="../../../utility/_export.css" rel="stylesheet">
   <link href="../../section/_export.css" rel="stylesheet">
+  <link href="../../form/_export.css" rel="stylesheet">
   <link href="dialog.css" rel="stylesheet">
   <script src="../../../utility/demo/dev.js" defer></script>
+  <script src="../../../utility/js/random.min.js" defer></script>
 </head>
 <body class="page">
   <div>
@@ -22,17 +24,34 @@
     <div class="empty"></div>
     <button onclick=dialog.showModal()>Open Dialog</button>
     <dialog id=dialog>
-      <header>
-        <h3><strong>TODO</strong></h3>
-      </header>
-      <main>
-        <p data-random-paragraph=6></p>
-        <p data-random-paragraph=6></p>
-        <p data-random-paragraph=6></p>
-      </main>
-      <footer>
+      <section>
+        <div>CONTENT</div>
+      </section>
+      <section>
         <button onclick=dialog.close()>Close</button>
-      </footer>
+      </section>
+    </dialog>
+    <div class="empty"></div>
+  </div>
+  <div>
+    <div class="code" data-name="dialog > LONG_CONTENT"></div>
+    <div class="empty"></div>
+    <button onclick=dialog1.showModal()>Open Dialog</button>
+    <dialog id=dialog1>
+      <section>
+        <button onclick=dialog1.close()>Close</button>
+      </section>
+      <section>
+        <p data-random-paragraph=8></p>
+        <p data-random-paragraph=10></p>
+      </section>
+      <section>
+        <p data-random-paragraph=5></p>
+        <p data-random-paragraph=6></p>
+      </section>
+      <section>
+        <button onclick=dialog1.close()>Close</button>
+      </section>
     </dialog>
     <div class="empty"></div>
   </div>

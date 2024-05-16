@@ -1,13 +1,6 @@
 picture {
-  --picture_width: auto;
-  --picture_height: auto;
-  /* override */
   display: block;
   max-inline-size: 100%;
   block-size: auto;
-  /* style */
-  width: var(--picture_width);
-  height: var(--picture_height);
-  object-fit: none;
   object-position: center;
 }
