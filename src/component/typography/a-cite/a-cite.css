@@ -1,42 +1,55 @@
+@layer variable.element.a {
+  a {
+    --a_link: #2196f3;
+    --a_active: #f44336;
+    --a_visited: #0068bb;
+    --a_fragment: #9c27b0;
+  } 
+}
 a {
   font-weight: bold;
   text-underline-offset: 0.2ex;
-}
-a:link {
-  color: var(--a_link);
-  text-decoration: underline;
-}
-a:visited {
-  color: var(--a_visited);
-}
-a[href]:active {
-  color: var(--a_active);
-}
-a[href~="#"] {
-  color: var(--a_fragment);
-}
-a[target] {
-  color: var(--a_target);
-}
-a[href^="mailto"] {
-  text-decoration: none;
-  border: 1px dashed var(--color-border);
-  padding: 0 3px;
-}
-a[href^="tel"] {
-  text-decoration: none;
-  font-family: var(--font-code);
-  border: 1px solid var(--color-border);
-  padding: 0 3px;
+  vertical-align: middle;
+  &:link {
+    color: var(--a_link);
+    text-decoration: underline;
+  }
+  &:visited { color: var(--a_visited); }
+  &[href]:active { color: var(--a_active); }
+  &[href~="#"] {
+    color: var(--a_fragment);
+    &:before {
+      content: "#";
+    }
+  }
+  &[target]:after {
+    content: "\02197";
+    top: -.25em;
+    left: .1em;
+    text-decoration: none;
+  }
+  &[href^="mailto"] {
+    text-decoration: none;
+    &:before {
+      content: "\02709";
+      margin-right: .25em;
+    }
+  }
+  &[href^="tel"] {
+    text-decoration: none;
+    font-family: var(--font-code, monospace);
+    &:before {
+      content: "\02706";
+      margin-right: .25em;
+    }
+  }
 }
 cite {
   font-style: normal;
   font-weight: 500;
-  padding: 0 2px;
-}
-cite:hover {
-  background-color: whitesmoke;
-}
-nav a:link {
-  text-decoration: none;
+  padding: 0 .25em;
+  &:hover {
+    background-color: #f5f5f5;;
+    color: #000;
+  }
 }

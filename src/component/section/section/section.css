@@ -1,9 +1,0 @@
-section {
-  padding: var(--padding-block);
-  &:not([class]) {
-    border-bottom: 1px solid var(--color-border);
-    &:last-of-type {
-      border-bottom: 0;
-    }
-  }
-}

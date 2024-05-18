@@ -1,18 +1,14 @@
-:has( > aside) {
-  min-height: 37px;
-  overflow: hidden;
-}
 aside {
-  position: absolute;
-  border: 1px solid var(--color-border);
-  right: 0;
+/*  position: absolute; */
+  border: 1px solid var(--color-border_layout);
+  /*right: 0;
   top: 0;
   width: 250px;
-  height: 100%;
+  height: fit-content;
   background-color: white;
-  z-index: 99;
+  z-index: 99;*/
 }
-aside::after {
+/*aside::after {
   position: absolute;
   top: 0;
   right: 0;
@@ -23,9 +19,9 @@ aside::after {
   background-position: center;
   background-color: whitesmoke;
   border: 1px solid silver;  
-}
+}*/
 /* Trigger */
-aside {
+/*aside {
   width: 0;
   visibility: hidden;
 }
@@ -38,7 +34,11 @@ aside:hover {
 }
 aside:hover::after {
   display: none;
-}
+}*/
+/* parent */
+/*:has( > aside) {
+  min-height: 37px;
+}*/
 /* -- nav =compound= */
 /*aside > nav {
   height: 100%;

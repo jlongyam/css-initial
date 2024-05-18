@@ -1,7 +1,8 @@
 figure {
-  padding: var(--padding-block);
+  padding: var(--margin-section);
   display: block;
   > figcaption {
     font-weight: bold;
+    padding: var(--padding-section);
   }
 }

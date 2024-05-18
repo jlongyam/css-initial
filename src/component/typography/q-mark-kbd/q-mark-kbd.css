@@ -1,6 +1,6 @@
 q::before,
 q::after {
-  content: "\02033";
+  content: '"';
   font-family: monospace;
   font-size: 1em;  
 }

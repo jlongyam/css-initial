@@ -1,6 +1,6 @@
 blockquote {
-  margin: var(--margin-block);
+  margin: var(--margin-section);
   overflow-wrap: break-word;
-  padding: var(--padding-block);
-  border: 1px solid var(--color-border);
+  padding: var(--padding-section);
+  border: 1px solid var(--color-border_layout);
 }

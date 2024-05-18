@@ -32,6 +32,7 @@ input[type=file] {
 	font: var(--input_font);
 	color: inherit;
   padding: 0;
+  border: none;
   &:focus {
     outline: var(--input_outline);
 	  outline-offset: var(--input_outline-offset);

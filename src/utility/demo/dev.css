@@ -1,9 +1,10 @@
 .empty {
-  height: 24px;
+  /* line-height original: 24px = 1.5 */
+  height: calc(var(--line-height) * 1em);
   background-color: whitesmoke;
 }
 .code {
-  height: 24px;
+  height: calc(var(--line-height) * 1em);
   position: relative;
 }
 .code::before {

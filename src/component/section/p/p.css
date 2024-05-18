@@ -1,4 +1,4 @@
 p {
-  margin: var(--margin-block);
+  margin: var(--margin-section);
   overflow-wrap: break-word;
 }

@@ -6,6 +6,8 @@
   <title>figure-figcaption</title>
   <link href="../../../global.css" rel="stylesheet">
   <link href="../../../utility/_export.css" rel="stylesheet">
+  <link href="../../typography/_export.css" rel="stylesheet">
+  <link href="../../layout/_export.css" rel="stylesheet">
   <link href="../pre/pre.css" rel="stylesheet">
   <link href="figure-figcaption.css" rel="stylesheet">
   <script src="../../../utility/js/random.min.js" defer></script>
@@ -34,6 +36,18 @@
       <figcaption>pre in figure</figcaption>
       <pre data-random-paragraph=5></pre>
     </figure>
+    <div class="empty"></div>
+  </div>
+  <div>
+    <div class="code" data-name="section > figure"></div>
+    <div class="empty"></div>
+    <section>
+      <figure>
+        <figcaption>figure in layout element</figcaption>
+        <div>Figure is <u>not layout</u> element, but <b>section</b> element</div>
+      </figure>
+      <figure><b>Other</b> figure</figure>
+    </section>
     <div class="empty"></div>
   </div>
 </body>

@@ -1,10 +1,8 @@
 hr {
-  /* reset */
   border: none;
   border-block-start: 1px solid;
   block-size: 0;
   color: inherit;
-  /* style */
   overflow: visible;
-  color: var(--color-border);
+  color: var(--color-border_layout);
 }

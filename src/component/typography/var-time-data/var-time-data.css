@@ -5,8 +5,8 @@ var {
 }
 time {
   font-weight: bold;
-  border-top: 2px solid var(--color-border);
-  border-bottom: 2px solid var(--color-border);
+  border-top: 2px solid var(--color-border_text, silver);
+  border-bottom: 2px solid var(--color-border_text, silver);
   padding: 0 2px;
 }
 data:hover::after {

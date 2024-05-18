@@ -1,9 +1,5 @@
-b {
-  font-weight: bold;
-}
-i {
-  font-style: italic;
-}
+b { font-weight: bold; }
+i { font-style: italic; }
 u {
   text-decoration: currentColor solid underline;
   text-decoration-thickness: 2px;

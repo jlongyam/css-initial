@@ -1,6 +1,0 @@
-article {
-  margin: var(--margin-block);
-  padding: var(--padding-block);
-  box-shadow: var(--article-shadow);
-  overflow-wrap: break-word;
-}

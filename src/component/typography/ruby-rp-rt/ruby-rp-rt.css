@@ -1,6 +1,2 @@
-ruby {
-  font-weight: bold;
-}
-rt {
-  color: DimGray;
-}
+ruby { font-weight: bold; }
+rt { color: DimGray; }

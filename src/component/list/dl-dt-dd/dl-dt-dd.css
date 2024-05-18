@@ -1,22 +1,15 @@
 dl {
-  padding: var(--padding-block);
+  margin: var(--margin-section);
   dl {
+    margin: 0;
     padding: var(--padding-section);
   }
-  ul {
-    padding: .5em 0 .5em 1.5em;
-  }
-  ol {
-    padding: .5em 0 .5em 1.5em;
-  }
+  ul { padding: .5em 0 .5em 1.5em; }
+  ol { padding: .5em 0 .5em 1.5em; }
 }
-dt {
-  font-weight: bold;
-}
+dt { font-weight: bold; }
 dd {
-  padding-left: var(--padding-block);
-  > li {
-    list-style-type: square;
-  }
+  padding-left: var(--padding-section);
+  > li { list-style-type: square; }
 }
 
