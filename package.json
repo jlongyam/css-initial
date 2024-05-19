@@ -1,0 +1,12 @@
+{
+  "name": "css-initial",
+  "version": "0.0.1",
+  "description": "css starting point",
+  "main": "dist/initial.css",
+  "scripts": {
+    "test": "echo NO_TEST",
+    "build": "node build.js"
+  },
+  "author": "jlongyam",
+  "license": "MIT"
+}
