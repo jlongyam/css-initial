@@ -6,8 +6,7 @@ const file = {
   dev: 'src/utility/demo/dev.css',
   page: 'src/utility/layout/box/page.css'
 }
-let tweak_content = `
-@import "demo/dev.css";
+let tweak_content = `@import "demo/dev.css";
 @import "demo/page.css";
 
 `
