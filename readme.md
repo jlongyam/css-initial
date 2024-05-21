@@ -9,7 +9,7 @@ CSS for starter, not awesome but neat.
 - Configurable
 - And more ...
 
-[Site](https://jlongyam.github.io/css-initial/) . [Demo](dist/demo/index.html)
+[Demo](dist/demo/index.html)
 
 [Changelog](changelog.md)
 
