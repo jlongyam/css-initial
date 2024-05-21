@@ -4,8 +4,9 @@
   "description": "css starting point",
   "main": "dist/initial.css",
   "scripts": {
-    "test": "echo NO_TEST",
-    "build": "node build.js"
+    "build-css": "node build.js",
+    "build-demo": "node build/component.js",
+    "build-asset": "node build/asset.js"
   },
   "author": "jlongyam",
   "license": "MIT"

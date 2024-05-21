@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="../../initial.css" rel="stylesheet">
+  <link href="../../_tweak.css" rel="stylesheet">
+</head>
+<body class="page">
+
+  <div>
+    <div class="code" data-name="a:not([href])"></div>
+    <div class="empty"></div>
+    <a>No href</a>
+    <div class="empty"></div>
+  </div>
+  <div>
+    <div class="code" data-name="a:link"></div>
+    <div class="empty"></div>
+    Go to <a href="about:blank">about:blank</a>
+    <div class="empty"></div>
+  </div>
+  <div>
+    <div class="code" data-name="a:visited"></div>
+    <div class="empty"></div>
+    Current page: <a href="./demo.html">demo.html</a>
+    <div class="empty"></div>
+  </div>
+  <div>
+    <div class="code" data-name="a:active"></div>
+    <div class="empty"></div>
+    Click this <a href="#!">link</a>
+    <div class="empty"></div>
+  </div>
+  <div>
+    <div class="code" data-name="a[href~='#']"></div>
+    <div class="empty"></div>
+    Go to <a href="#">TOP</a>
+    <div class="empty"></div>
+  </div>
+  <div>
+    <div class="code" data-name="a[target]"></div>
+    <div class="empty"></div>
+    Open blank in <a href="about:blank" target="_blank">in new tab</a>
+    <div class="empty"></div>
+  </div>
+  <div>
+    <div class="code" data-name="a[href^='mailto']"></div>
+    <div class="empty"></div>
+    Send <a href="mailto:my@email.com" onclick="return false">email</a>  to
+    <div class="empty"></div>
+  </div>
+  <div>
+    <div class="code" data-name="a[href^='tel']"></div>
+    <div class="empty"></div>
+    Direct Call at <a href="tel:+49.157.0156" onclick="return false">+49 157 0156</a>
+    <div class="empty"></div>
+  </div>
+  <div>
+    <div class="code" data-name="cite"></div>
+    <div class="empty"></div>
+    More information can be found in <cite>[ISO-0000]</cite>.
+    <div class="empty"></div>
+  </div>
+  <div>
+    <div class="code" data-name="cite a"></div>
+    <div class="empty"></div>
+    First sentence in <cite><a href="https://example.com" onclick="return false">Example Book</a></cite> by Foo Bar (Part 1, Chapter 1).
+    <div class="empty"></div>
+  </div>
+
+  <div>
+    <div class="code" data-name="sub"></div>
+    <div class="empty"></div>
+    H<sub>2</sub>O
+    <div class="empty"></div>
+  </div>
+  <div>
+    <div class="code" data-name="sub"></div>
+    <div class="empty"></div>
+    Copyright<sup>&copy;</sup>
+    <div class="empty"></div>
+  </div>
+  <div>
+    <div class="code" data-name="small"></div>
+    <div class="empty"></div>
+    This is <small>sequence of small</small> text.
+    <div class="empty"></div>
+  </div>
+  <div>
+    <div class="code" data-name="h1 > sub"></div>
+    <div class="empty"></div>
+    <h1>H<sub>2</sub>O</h1>
+    <p data-random-paragraph="2">Powelovasa egon, foxuna ud ga omox. fiwe ib, zixi enogozigiq zi imaq.</p>
+    <div class="empty"></div>
+  </div>
+  <div>
+    <div class="code" data-name="h3 > sup"></div>
+    <p data-random-sentence="9">Biwugewidu esoj tiyopuna adaw womewasi ugus mu amudilelip li axegelez.</p>
+    <h3>Copyright<sup>&copy;</sup></h3>
+    <div class="empty"></div>
+  </div>
+  <div>
+    <div class="code" data-name="h1 > small"></div>
+    <h1>Heading 1 with <small>Small</small></h1>
+    <div class="empty"></div>
+  </div>
+  <div>
+    <div class="code" data-name="h3 > small"></div>
+    <h3>Detail information. <small>NEW</small></h3>
+    <div class="empty"></div>
+  </div>
+  <div>
+    <div class="code" data-name="h6 > small"></div>
+    <h6>Heading 6 with <small>SMALL</small></h6>
+    <div class="empty"></div>
+  </div>
+
+  <div>
+    <div class="code" data-name="code"></div>
+    <div class="empty"></div>
+    There is no <code>forEach()</code> method in <code>Object</code>.
+    <div class="empty"></div>
+  </div>
+  <div>
+    <div class="code" data-name="samp"></div>
+    <div class="empty"></div>
+    In terminal <samp>$ git commit -m 'Update'</samp>
+    <div class="empty"></div>
+  </div>
+  <div>
+    <div class="code" data-name="output"></div>
+    <div class="empty"></div>
+    Result: <output>60</output>
+    <div class="empty"></div>
+  </div>
+
+  <div>
+    <div class="code" data-name="abbr"></div>
+    <div class="empty"></div>
+    Without abbr: css,<br>
+    with abbr: <abbr>css</abbr>   
+    <div class="empty"></div>
+  </div>
+  <div>
+    <div class="code" data-name="abbr[title]"></div>
+    <div class="empty"></div>
+    Multiline title inside <abbr title="Hyper&#10;Text&#10;Markup&#10;Language">html</abbr>   
+    <div class="empty"></div>
+  </div>
+  <div>
+    <div class="code" data-name="dfn"></div>
+    <div class="empty"></div>
+    <dfn>dev</dfn>
+    <div class="empty"></div>
+  </div>
+  <div>
+    <div class="code" data-name="dfn[title]"></div>
+    <div class="empty"></div>
+    <dfn title="Developer">dev</dfn> 
+    <div class="empty"></div>
+  </div>
+
+  <div>
+    <div class="code" data-name="b"></div>
+    <div class="empty"></div>
+    Is a <b>Bold</b> text
+    <div class="empty"></div>
+  </div>
+  <div>
+    <div class="code" data-name="i"></div>
+    <div class="empty"></div>
+    Text <i>Italic</i>
+    <div class="empty"></div>
+  </div>
+  <div>
+    <div class="code" data-name="u"></div>
+    <div class="empty"></div>
+    Text <u>Underline</u>
+    <div class="empty"></div>
+  </div>
+  <div>
+    <div class="code" data-name="s"></div>
+    Strike <s>Text</s>
+    <div class="empty"></div>
+  </div>
+
+  <div>
+    <div class="code" data-name="del"></div>
+    <div class="empty"></div>
+    Comment <del>Deleted</del>.
+    <div class="empty"></div>
+  </div>
+  <div>
+    <div class="code" data-name="ins"></div>
+    <div class="empty"></div>
+    This is <ins>new content</ins>. 
+    <div class="empty"></div>
+  </div>
+  <div>
+    <div class="code" data-name="del + ins"></div>
+    <div class="empty"></div>
+    This is <del>Important</del> <ins>Not Important</ins>
+    <div class="empty"></div>
+  </div>
+
+  <div>
+    <div class="code" data-name="strong"></div>
+    <div class="empty"></div>
+    This is <strong>strong</strong> text.
+    <div class="empty"></div>
+  </div>
+  <div>
+    <div class="code" data-name="em"></div>
+    <div class="empty"></div>
+    We <em>had</em> to do something about it.
+    <div class="empty"></div>
+  </div>
+
+  <div>
+    <div class="code" data-name="code var"></div>
+    <div class="empty"></div>
+    <code>let <var>foo</var> = 'bar'</code>
+    <div class="empty"></div>
+  </div>
+  <div>
+    <div class="code" data-name="time"></div>
+    <div class="empty"></div>
+    The concert starts at <time datetime="20:00">20:00</time>
+    <div class="empty"></div>
+  </div>
+  <div>
+    <div class="code" data-name="data"></div>
+    <div class="empty"></div>
+    Hover onto data:<br>
+    - <data value="398">Mini Ketchup</data><br>
+    - <data value="399">Jumbo Ketchup</data><br>
+    - <data value="400">Mega Jumbo Ketchup</data>
+    <div class="empty"></div>
+  </div>
+
+  <div>
+    <div class="code" data-name="q"></div>
+    <div class="empty"></div>
+    This is <q>Sentence inside  quote</q>.
+    <div class="empty"></div>
+  </div>
+  <div>
+    <div class="code" data-name="mark"></div>
+    <div class="empty"></div>
+    Example <mark>Marked</mark> text.
+    <div class="empty"></div>
+  </div>
+  <div>
+    <div class="code" data-name="kbd"></div>
+    <div class="empty"></div>
+    Press <kbd>Ctrl</kbd>+<kbd>s</kbd> to Save.
+    <div class="empty"></div>
+  </div>
+
+  <div>
+    <div class="code" data-name="ruby rp rt (1 char)"></div>
+    <div class="empty"></div>
+    Left - <ruby>CENTER<rp>(</rp><rt>TOP</rt><rp>)</rp></ruby> - Right
+    <div class="empty"></div>
+  </div>
+  <div>
+    <div class="code" data-name="ruby rp rt (2 char)"></div>
+    <div class="empty"></div>
+    Before - 
+    <ruby>L<rp>(</rp><rt>1</rt><rp>)</rp>R<rp>(</rp><rt>2</rt><rp>)</rp></ruby>
+    - After
+    <div class="empty"></div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="../../initial.css" rel="stylesheet">
+  <link href="../../_tweak.css" rel="stylesheet">
+</head>
+<body class="page">
+
+  <div>
+    <div class="code" data-name="fieldset"></div>
+    <div class="empty"></div>
+    <fieldset>
+      NODE_TEXT
+    </fieldset>
+    <div class="empty"></div>
+  </div>
+  <div>
+    <div class="code" data-name="fieldset > legend"></div>
+    <div class="empty"></div>
+    <fieldset>
+      <legend>Legend</legend>
+      NODE_TEXT
+    </fieldset>
+    <div class="empty"></div>
+  </div>
+  <div>
+    <div class="code" data-name="legend h1"></div>
+    <div class="empty"></div>
+    <fieldset>
+      <legend><h1>Heading 1</h1></legend>
+      <p>Paragraph</p>
+    </fieldset>
+    <div class="empty"></div>
+  </div>
+  <div>
+    <div class="code" data-name="legend h4"></div>
+    <div class="empty"></div>
+    <fieldset>
+      <legend><h4>Heading 4</h4></legend>
+      <p>Paragraph</p>
+    </fieldset>
+    <div class="empty"></div>
+  </div>
+
+  <div>
+    <div class="code" data-name="input|input[type=text]"></div>
+    <div class="empty"></div>
+    <input value="no-type"><br>
+		<input type="text">
+		<input type="text" placeholder="Placeholder"><br>
+		<input type="text" value="Content">
+		<input type="text" value="Text" disabled>
+    <div class="empty"></div>
+  </div>
+  <div>
+    <div class="code" data-name="input[type=hidden]"></div>
+    <div class="empty"></div>
+    <input type="hidden" value="34657">
+    <div class="empty"></div>
+  </div>
+  <div>
+    <div class="code" data-name="input[type=color]"></div>
+    <div class="empty"></div>
+		<input type="color" value="#FFDC00">
+		<input type="color" disabled>
+    <div class="empty"></div>
+  </div>
+  <div>
+    <div class="code" data-name="input[type=password]"></div>
+    <div class="empty"></div>
+    <input type="password">
+		<input type="password" placeholder="Password"><br>
+		<input type="password" value="password">
+		<input type="password" disabled>
+    <div class="empty"></div>
+  </div>
+  <div>
+    <div class="code" data-name="input[type=tell]"></div>
+    <div class="empty"></div>
+    <input type="tell">
+		<input type="tell" placeholder="+64"><br>
+		<input type="tell" value="+87657657656">
+		<input type="tell" disabled>
+    <div class="empty"></div>
+  </div>
+  <div>
+    <div class="code" data-name="input[type=url]"></div>
+    <div class="empty"></div>
+    <input type="url">
+		<input type="url" placeholder="https://"><br>
+		<input type="url" value="https://example.com">
+		<input type="url" disabled>
+    <div class="empty"></div>
+  </div>
+  <div>
+    <div class="code" data-name="input[type=search]"></div>
+    <div class="empty"></div>
+    <input type="search">
+		<input type="search" placeholder="Search"><br>
+		<input type="search" value="Something">
+		<input type="search" disabled>
+    <div class="empty"></div>
+  </div>
+  <div>
+    <div class="code" data-name="input[type=email]"></div>
+    <div class="empty"></div>
+    <input type="email">
+		<input type="email" placeholder="mail@your.site"><br>
+		<input type="email" value="foo@gmail.com">
+		<input type="email" disabled>
+    <div class="empty"></div>
+  </div>
+  <div>
+    <div class="code" data-name="input[type=date]"></div>
+    <div class="empty"></div>
+    <input type="date" value="2018-07-22" min="2018-01-01" max="2018-12-31">
+    <input type="date" value="2018-07-22" disabled>
+    <div class="empty"></div>
+  </div>
+  <div>
+    <div class="code" data-name="input[type=datetime-local]"></div>
+    <div class="empty"></div>
+    <input type="datetime-local" value="2018-06-12T19:30">
+    <div class="empty"></div>
+  </div>
+  <div>
+    <div class="code" data-name="input[type=month]"></div>
+    <div class="empty"></div>
+    <input type="month" min="2022-06" max="2022-09" required>
+    <div class="empty"></div>
+  </div>
+  <div>
+    <div class="code" data-name="input[type=week]"></div>
+    <div class="empty"></div>
+    <input type="week" min="2017-W01" max="2017-W52">
+    <div class="empty"></div>
+  </div>
+  <div>
+    <div class="code" data-name="input[type=time]"></div>
+    <div class="empty"></div>
+    <input type="time" min="09:00" max="18:00" required>
+    <div class="empty"></div>
+  </div>
+
+  <div>
+    <div class="code" data-name="button"></div>
+    <div class="empty"></div>
+    <button>Button</button><button disabled>Disabled</button>
+    <div class="empty"></div>
+  </div>
+  <div>
+    <div class="code" data-name="input[button]"></div>
+    <div class="empty"></div>
+    <input type="button" value="Button"><input type="button" value="Disabled" disabled>Text
+    <div class="empty"></div>
+  </div>
+  <div>
+    <div class="code" data-name="input[reset]"></div>
+    <div class="empty"></div>
+    <input type="reset" value="Reset"><input type="reset" value="Disabled" disabled>Text
+    <div class="empty"></div>
+  </div>
+  <div>
+    <div class="code" data-name="input[submit]"></div>
+    <div class="empty"></div>
+    <input type="submit" value="submit"><br>
+    <input type="submit" value="Disabled" disabled>Text
+    <div class="empty"></div>
+  </div>
+  <div>
+    <div class="code" data-name="input[file]"></div>
+    <div class="empty"></div>
+    <input type="file"><br>
+    <input type="file" disabled>Text
+    <div class="empty"></div>
+  </div>
+  <div>
+    <div class="code" data-name="input[file] (types)"></div>
+    <div class="empty"></div>
+    <input type="file" webkitdirectory directory> <code>directoty</code><br>
+    <input type="file" name="file[]" multiple> <code>multiple</code>    
+    <div class="empty"></div>
+  </div>
+
+  <div>
+    <div class="code" data-name="select option"></div>
+    <div class="empty"></div>
+    <select>
+			<option>Option A</option>
+			<option>Option B</option>
+			<option>Option C</option>
+		</select>
+		<select disabled>
+			<option>Option 1</option>
+			<option>Option 2</option>
+			<option>Option 3</option>
+		</select>
+    <div class="empty"></div>
+  </div>
+  <div>
+    <div class="code" data-name="select[multiple]"></div>
+    <div class="empty"></div>
+    <select multiple>
+			<option>List Option A</option>
+			<option>List Option B</option>
+			<option>List Option C</option>
+			<option>List Option D</option>
+			<option>List Option E</option>
+			<option>List Option F</option>
+		</select>
+		<select multiple disabled>
+			<option>List Option 1</option>
+			<option>List Option 2</option>
+			<option>List Option 3</option>
+		</select>
+    <div class="empty"></div>
+  </div>
+  <div>
+    <div class="code" data-name="select option"></div>
+    <div class="empty"></div>
+    <select>
+			<option selected>Select by group</option>
+			<optgroup label="Group 1">
+				<option>Option A</option>
+				<option>Option B</option>
+			</optgroup>
+			<optgroup label="Group 2">
+				<option>Option A</option>
+				<option>Option B</option>
+			</optgroup>
+			<option disabled>Group 3</option>
+		</select>
+    <div class="empty"></div>
+  </div>
+  <div>
+    <div class="code" data-name="select option"></div>
+    <div class="empty"></div>
+    <p>paragraph</p>
+    <select>
+			<option>Option A</option>
+			<option>Option B</option>
+			<option>Option C</option>
+		</select>
+    <p>paragraph</p>
+		<div class="empty"></div>
+  </div>
+
+  <div>
+    <div class="code" data-name="form input[list] datalist"></div>
+    <div class="empty"></div>
+    <form>
+      <label for="list_icecream">Label for list</label>
+      <input list="ice_cream" id="list_icecream">
+      <input type=reset value=Reset>
+      <datalist id="ice_cream">
+        <option value="Chocolate"></option>
+        <option value="Coconut"></option>
+        <option value="Mint"></option>
+        <option value="Strawberry"></option>
+        <option value="Vanilla"></option>
+      </datalist>
+    </form>
+    <form>
+      <label for="list_icecream2">Label for list</label>
+      <input list="ice_cream2" id="list_icecream2" disabled>
+      <datalist id="ice_cream2">
+        <option value="Chocolate"></option>
+        <option value="Coconut"></option>
+      </datalist>
+    </form>
+    <div class="empty"></div>
+  </div>
+  <div>
+    <div class="code" data-name="input[list][type=color]"></div>
+    <div class="empty"></div>
+    <form>
+      <label for="colors">Label for <b>RED</b> color</label>
+      <input type="color" list="redColors" id="colors" value="#A52A2A">
+      <datalist id="redColors">
+        <option value="#800000"></option>
+        <option value="#8B0000"></option>
+        <option value="#A52A2A"></option>
+        <option value="#DC143C"></option>
+      </datalist>
+    </form>
+    <form>
+      <label for="colors2">Label for <b>RED</b> color</label>
+      <input type="color" list="redColors2" id="colors2" value="#A52A2A" disabled>
+      <datalist id="redColors2">
+        <option value="#800000"></option>
+        <option value="#8B0000"></option>
+      </datalist>
+    </form>
+    <div class="empty"></div>
+  </div>
+  <div>
+    <div class="code" data-name="input[list][type=time]"></div>
+    <div class="empty"></div>
+    <label for="inpt_list_popular">popularHours</label>
+    <input type="time" list="popularHours" id="inpt_list_popular">
+    <datalist id="popularHours">
+      <option value="12:00"></option>
+      <option value="13:00"></option>
+      <option value="14:00"></option>
+    </datalist>
+    <label for="inpt_list_popular2">popularHours</label>
+    <input type="time" list="popularHours2" id="inpt_list_popular2" disabled>
+    <datalist id="popularHours2">
+      <option value="12:00"></option>
+      <option value="13:00"></option>
+      <option value="14:00"></option>
+    </datalist>
+    <div class="empty"></div>
+  </div>
+  
+
+  <div>
+    <div class="code" data-name="input[checkbox]"></div>
+    <div class="empty"></div>
+    <input type="checkbox" name="check">
+		<input type="checkbox" name="check" checked>
+		<input type="checkbox" name="check">
+		<input type="checkbox" name="check">
+		<input type="checkbox" name="check" disabled>
+		<input type="checkbox" name="check" checked disabled>
+    <div class="empty"></div>
+  </div>
+  <div>
+    <div class="code" data-name="input[radio]"></div>
+    <div class="empty"></div>
+    <input type="radio" name="rad">
+		<input type="radio" name="rad">
+		<input type="radio" name="rad" checked>
+		<input type="radio" name="rad">
+		<input type="radio" name="rad" disabled>
+    <div class="empty"></div>
+  </div>
+  <div>
+    <div class="code" data-name="label > [checkbox|radio]"></div>
+    <div class="empty"></div>
+    <label><input type="checkbox"> Label choose 1</label><br>
+    <label><input type="checkbox"> Label choose 2</label><br>
+    <label><input name="choise_1" type="radio"> Label choise 1</label><br>
+    <label><input name="choise_1" type="radio"> Label choise 2</label>
+    <div class="empty"></div>
+  </div>
+  <div>
+    <div class="code" data-name="[flex] > [checkbox|radio]"></div>
+    <div class="empty"></div>
+    <div class="flex" style="height: 24px;">
+      <input type="checkbox"><input type="radio">
+    </div>
+    <div class="empty"></div>
+  </div>
+
+  <div>
+    <div class="code" data-name="input[type=button]"></div>
+    <div class="empty"></div>
+    <input type="button" value="Foundation">
+    <input type="checkbox">
+    <div class="empty"></div>
+  </div>
+  <div>
+    <div class="code" data-name="[class=flex] input[type=range]"></div>
+    <div class="empty"></div>
+    <div class="flex">
+      <input type="range" min="0" max="100">
+    </div>
+    <div class="empty"></div>
+  </div>
+
+  <div>
+    <div class="code" data-name="progress"></div>
+    <div class="empty"></div>
+    <progress value="70" max="100"></progress>
+    <div class="empty"></div>
+  </div>
+  <div>
+    <div class="code" data-name="[class=flex] progress"></div>
+    <div class="empty"></div>
+    <div class="flex" style="height: 24px; align-items:center">
+      <input type="checkbox">
+      <progress value="70" max="100"></progress>
+      <input type="radio">
+    </div>
+    <div class="empty"></div>
+  </div>
+
+  <div>
+    <div class="code" data-name="input[type=text]"></div>
+    <div class="empty"></div>
+    <input type="text">
+    <div class="empty"></div>
+  </div>
+  <div>
+    <div class="code" data-name="input[type=image]"></div>
+    <div class="empty"></div>
+    <input type="image" src="arrow-down-circle.png"><!-- 240x240 -->
+    <code>png</code>
+    <input type="image" src="arrow-down-circle.svg"><!-- 24x24 -->
+    <code>svg</code>
+    <div class="empty"></div>
+  </div>
+  <div>
+    <div class="code" data-name="textarea"></div>
+    <div class="empty"></div>
+    <textarea placeholder="placeholder"></textarea><br>
+    <textarea disabled></textarea>
+    <span>TEXT</span>
+    <div class="empty"></div>
+  </div>
+
+  <div>
+    <div class="code" data-name="meter (safe)"></div>
+    <div class="empty"></div>
+    <meter min="200" max="500" value="350">safe</meter>
+    <span>Text</span>
+    <div class="empty"></div>
+  </div>
+  <div>
+    <div class="code" data-name="meter (warning)"></div>
+    <div class="empty"></div>
+    <meter min="0" max="100" low="33" high="66" optimum="80" value="50">warning</meter>
+    <input type=button value=Button>
+    <div class="empty"></div>
+  </div>
+  <div>
+    <div class="code" data-name="meter (danger)"></div>
+    <div class="empty"></div>
+    <meter low="69" high="80" max="100" value="84">danger</meter>
+    <input type=checkbox>
+    <div class="empty"></div>
+  </div>
+
+</body>
+</html>

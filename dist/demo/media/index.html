@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="../../initial.css" rel="stylesheet">
+  <link href="../../_tweak.css" rel="stylesheet">
+</head>
+<body class="page">
+
+  <div>
+    <div class="code" data-name="audio[controls] source"></div>
+    <div class="empty"></div>
+    <audio controls autorun=false>
+      <source src="../../../utility/demo/sample/audio.mp3" type="audio/mpeg">
+      <source src="" type="audio/ogg">
+      <p>Download:<br>
+        <a href="file.mp3">MP3</a> or<br>
+        <a href="file.ogg">OGG</a> audio.
+      </p>
+    </audio>
+    <button>Button</button>
+    <div class="empty"></div>
+  </div>
+  <div>
+    <div class="code" data-name="figure figcaption + audio"></div>
+    <div class="empty"></div>
+    <figure>
+      <figcaption>Listen to the T-Rex:</figcaption>
+      <audio controls src="../../../utility/demo/sample/audio.mp3">
+        <a href="#!"> Download audio </a>
+      </audio>
+    </figure>
+    <div class="empty"></div>
+  </div>
+
+  
+  <div>
+    <div class="code" data-name="video[controls]"></div>
+    <div class="empty"></div>
+    <video src="../../../utility/demo/sample/vide.webm" controls>
+      <p>
+        Your browser does not support HTML video.
+        Here is a <a href="#!">link to the video</a> instead.
+      </p>
+    </video>
+    <div class="empty"></div>
+  </div>
+  <div>
+    <div class="code" data-name="video source"></div>
+    <video controls>
+      <source src="../../../utility/demo/sample/video.mp4" type="video/mp4" />
+      <source src="../../../utility/demo/sample/video.webm" type="video/webm" />
+      <p>
+        Your browser does not support this video.
+        Here is a <a href="#!">link to the video</a> instead.
+      </p>
+    </video>
+    <div class="empty"></div>
+  </div>
+  
+  <div>
+    <div class="code" data-name="figure figcaption + video"></div>
+    <div class="empty"></div>
+    <figure>
+      <figcaption>Watch a rabbit:</figcaption>
+      <video src="./../../utility/demo/sample/video.webm" controls></video>
+    </figure>
+    <div class="empty"></div>
+  </div>
+
+  <div>
+    <div class="code" data-name="img[alt][title]"></div>
+    <div class="empty"></div>
+    <img src="../../../utility/demo/sample/image.jpg" alt="Image sample 300x300 px" title="Image sample&#10;size 300x300 px">
+    <div class="empty"></div>
+  </div>
+  <div>
+    <div class="code" data-name="figure figcaption + img"></div>
+    <div class="empty"></div>
+    <figure>
+      <figcaption>jpg</figcaption>
+      <img src="../../../utility/demo/sample/image.jpg">
+    </figure>
+    <div class="empty"></div>
+  </div>
+  <div>
+    <div class="code" data-name="(svg) img[width][height]"></div>
+    <div class="empty"></div>
+    <figure>
+      <figcaption>svg</figcaption>
+      <img src="../../../utility/demo/sample/image.svg" width="200" height="200">
+    </figure>
+    <div class="empty"></div>
+  </div>
+
+  
+  <div>
+    <div class="code" data-name="svg[width][height]"></div>
+    <div class="empty"></div>
+    <svg width="100%" height="100%">
+      <rect width="100%" height="100%" fill="red" />
+      <circle cx="100%" cy="100%" r="150" fill="blue" stroke="black" />
+      <polygon points="120,0 240,225 0,225" fill="green" />
+      <text x="50" y="100" font-family="Verdana" font-size="55" fill="white" stroke="black" stroke-width="2">
+        Hello <a href="#!">World</a> !
+      </text>
+    </svg>
+    <span>Span Text</span>
+    <div class="empty"></div>
+  </div>
+  <div>
+    <div class="code" data-name="figure figcaption + svg"></div>
+    <div class="empty"></div>
+    <figure>
+      <figcaption>SVG image:</figcaption>
+      <svg width="100%" height="100%">
+        <rect width="100%" height="100%" fill="red" />
+        <circle cx="100%" cy="100%" r="150" fill="blue" stroke="black" />
+        <polygon points="120,0 240,225 0,225" fill="green" />
+        <text x="50" y="100" font-family="Verdana" font-size="55" fill="white" stroke="black" stroke-width="2">
+          <a href="javascript:alert('OK')">OK</a>
+        </text>
+      </svg>
+    </figure>
+    <div class="empty"></div>
+  </div>
+
+  
+  <div>
+    <div class="code" data-name="picture source[srcset][media] img"></div>
+    <div class="empty"></div>
+    <picture>
+      <source srcset="../../../utility/demo/sample/128x128.png" media="(orientation: portrait)" />
+      <img src="../../../utility/demo/sample/640x480.png" />
+    </picture>
+    <div class="empty"></div>
+  </div>
+  <div>
+    <div class="code" data-name="figure figcaption + picture"></div>
+    <div class="empty"></div>
+    <figure>
+      <figcaption>Picture</figcaption>
+      <picture>
+        <source srcset="../../../utility/demo/sample/128x128.png" media="(orientation: portrait)" />
+        <img src="../../../utility/demo/sample/640x480.png" />
+      </picture>
+    </figure>
+    <div class="empty"></div>
+  </div>
+
+  <div>
+    <div class="code" data-name="iframe:not(src)"></div>
+    <div class="empty"></div>
+    <iframe></iframe>
+    <div class="empty"></div>
+  </div>
+  <div>
+    <div class="code" data-name="iframe"></div>
+    <div class="empty"></div>
+    <iframe src="about:blank"></iframe>
+    <div class="empty"></div>
+  </div>
+  <div>
+    <div class="code" data-name="figure iframe"></div>
+    <div class="empty"></div>
+    <figure>
+      <figcaption>TITLE</figcaption>
+      <iframe></iframe>
+    </figure>
+    <div class="empty"></div>
+  </div>
+  <div>
+    <div class="code" data-name="iframe[width][height]"></div>
+    <div class="empty"></div>
+    <iframe width="500" height="300" src="../../../utility/demo/sample/example.html"></iframe>
+    <div class="empty"></div>
+  </div>
+  <div>
+    <div class="code" data-name="iframe [src*=https]"></div>
+    <div class="empty"></div>
+    <iframe src="https://www.openstreetmap.org/export/embed.html?bbox=-0.004017949104309083%2C51.47612752641776%2C0.00030577182769775396%2C51.478569861898606&layer=mapnik"></iframe>
+    <div class="empty"></div>
+  </div>
+
+  <div>
+    <div class="code" data-name="embed[type=video/webm]"></div>
+    <div class="empty"></div>
+    <embed type="video/webm" src="../../../utility/demo/sample/video.webm">
+    <div class="empty"></div>
+  </div>
+  <div>
+    <div class="code" data-name="figure embed[type=application/pdf]"></div>
+    <div class="empty"></div>
+    <figure>
+      <figcaption>PDF</figcaption>
+      <embed type="application/pdf" src="../../../utility/demo/sample/file.pdf">
+    </figure>
+    <div class="empty"></div>
+  </div>
+
+  <div>
+    <div class="code" data-name="figure object[type=application/pdf]"></div>
+    <div class="empty"></div>
+    <figure>
+      <figcaption>PDF</figcaption>
+      <object type="application/pdf" data="../../../utility/demo/sample/file.pdf"></object>
+    </figure>
+    <div class="empty"></div>
+  </div>
+  <div>
+    <div class="code" data-name="figure object[type=text/html]"></div>
+    <div class="empty"></div>
+    <figure>
+      <figcaption>PDF</figcaption>
+      <object type="text/html" data="../../../utility/demo/sample/example.html"></object>
+    </figure>
+    <div class="empty"></div>
+  </div>
+
+</body>
+</html>

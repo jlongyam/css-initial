@@ -9,7 +9,7 @@ CSS for starter, not awesome but neat.
 - Configurable
 - And more ...
 
-[Demo](dist/demo.html)
+[Demo](dist/demo/index.html)
 
 [Changelog](changelog.md)
 

@@ -21,7 +21,7 @@ class FS {
     fs.rmdirSync(target_path)
   }
   file_write(file_path = this.current+'file.txt', file_content = '') {
-    fs.writeFileSync(file_path, file_content)
+    fs.writeFileSync(file_path, file_content, 'utf-8')
   }
   file_append(file_path = this.current+'file.txt', file_content = '') {
     fs.appendFileSync(file_path, file_content)

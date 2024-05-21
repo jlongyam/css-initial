@@ -1,4 +1,4 @@
-const fs = require('./build/fs.js')
+const fs = require('./fs.js')
 
 const dist = 'dist/initial.css'
 const main = 'src/_export.css'
@@ -26,7 +26,6 @@ function parseImport( path_target = 'src/_export.css' ) {
       else { // file
         file.push(clean_line)
       }
-      
       parseImport(dir_root+clean_line)
     }
     else {
@@ -42,8 +41,8 @@ function parseImport( path_target = 'src/_export.css' ) {
   //return obj
 }
 parseImport()
-console.log("\n=====JSON======\n\n"+JSON.stringify(trace,0,2))
-fs.file_write(__dirname+'/log.txt',JSON.stringify(trace,0,2))
+//console.log("\n=====JSON======\n\n"+JSON.stringify(trace,0,2))
+//fs.file_write(__dirname+'/log.txt',JSON.stringify(trace,0,2))
 fs.file_write(dist,'')
 trace.forEach(i=> {
   fs.file_append(dist,i.str+'\n')
