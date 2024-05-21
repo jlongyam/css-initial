@@ -10,6 +10,6 @@ let tweak_content = `@import "demo/dev.css";
 @import "demo/page.css";
 
 `
-fs.file_write(to+'_tweak.css',tweak_content+fs.file_read(file.tweak))
+fs.file_write(to+'tweak.css',tweak_content+fs.file_read(file.tweak))
 fs.file_write(to+'demo/dev.css', fs.file_read(file.dev))
 fs.file_write(to+'demo/page.css', fs.file_read(file.page))

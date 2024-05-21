@@ -46,7 +46,7 @@ function createFileIndex(location, content) {
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="${rel}initial.css" rel="stylesheet">
-  <link href="${rel}_tweak.css" rel="stylesheet">
+  <link href="${rel}tweak.css" rel="stylesheet">
 </head>
 <body class="page">
 `
