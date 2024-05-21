@@ -4,7 +4,7 @@
   "description": "css starting point",
   "main": "dist/initial.css",
   "scripts": {
-    "build-css": "node build.js",
+    "build-css": "node build/css.js",
     "build-demo": "node build/component.js",
     "build-asset": "node build/asset.js"
   },

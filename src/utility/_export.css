@@ -1,5 +1,3 @@
-@import "display/display.css";
-@import "color/_export.css";
 @import "layout/_export.css";
-@import "switch/switch.css";
+@import "appearance/appearance.css";
 @import "demo/_export.css";

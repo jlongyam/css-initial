@@ -6,6 +6,7 @@ input[type=range] {
   min-width: 25px;
   width: var(--input_range-width);
   background-color: transparent;
+  border: none;
   -webkit-appearance: none;
   height: var(--input_height);
   vertical-align: middle;

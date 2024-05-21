@@ -4,11 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>audio</title>
-  <link href="../../../global.css" rel="stylesheet">
+  <link href="../../../_export.css" rel="stylesheet">
   <link href="../../../utility/_export.css" rel="stylesheet">
-  <link href="../../form/_export.css" rel="stylesheet">
-  <link href="../../section/_export.css" rel="stylesheet">
-  <link href="audio.css" rel="stylesheet">
   <script src="../../../utility/demo/dev.js" defer></script>
 </head>
 <body class="page">
@@ -16,11 +13,11 @@
     <div class="code" data-name="audio[controls] source"></div>
     <div class="empty"></div>
     <audio controls autorun=false>
-      <source src="../../../utility/demo/sample/audio.mp3" type="audio/mpeg">
+      <source src="../.sample/audio.mp3" type="audio/mpeg">
       <source src="" type="audio/ogg">
       <p>Download:<br>
-        <a href="file.mp3">MP3</a> or<br>
-        <a href="file.ogg">OGG</a> audio.
+        <a href="file.mp3" onclick='return false'>MP3</a> or<br>
+        <a href="#!">OGG</a> audio.
       </p>
     </audio>
     <button>Button</button>
@@ -31,7 +28,7 @@
     <div class="empty"></div>
     <figure>
       <figcaption>Listen to the T-Rex:</figcaption>
-      <audio controls src="../../../utility/demo/sample/audio.mp3">
+      <audio controls src="../.sample/audio.mp3">
         <a href="#!"> Download audio </a>
       </audio>
     </figure>

@@ -12,11 +12,11 @@
     <div class="code" data-name="audio[controls] source"></div>
     <div class="empty"></div>
     <audio controls autorun=false>
-      <source src="../../../utility/demo/sample/audio.mp3" type="audio/mpeg">
+      <source src="../.sample/audio.mp3" type="audio/mpeg">
       <source src="" type="audio/ogg">
       <p>Download:<br>
-        <a href="file.mp3">MP3</a> or<br>
-        <a href="file.ogg">OGG</a> audio.
+        <a href="file.mp3" onclick='return false'>MP3</a> or<br>
+        <a href="#!">OGG</a> audio.
       </p>
     </audio>
     <button>Button</button>
@@ -27,7 +27,7 @@
     <div class="empty"></div>
     <figure>
       <figcaption>Listen to the T-Rex:</figcaption>
-      <audio controls src="../../../utility/demo/sample/audio.mp3">
+      <audio controls src="../.sample/audio.mp3">
         <a href="#!"> Download audio </a>
       </audio>
     </figure>
@@ -38,7 +38,7 @@
   <div>
     <div class="code" data-name="video[controls]"></div>
     <div class="empty"></div>
-    <video src="../../../utility/demo/sample/vide.webm" controls>
+    <video src="../.sample/vide.webm" controls>
       <p>
         Your browser does not support HTML video.
         Here is a <a href="#!">link to the video</a> instead.
@@ -49,8 +49,8 @@
   <div>
     <div class="code" data-name="video source"></div>
     <video controls>
-      <source src="../../../utility/demo/sample/video.mp4" type="video/mp4" />
-      <source src="../../../utility/demo/sample/video.webm" type="video/webm" />
+      <source src="../.sample/video.mp4" type="video/mp4">
+      <source src="../.sample/video.webm" type="video/webm">
       <p>
         Your browser does not support this video.
         Here is a <a href="#!">link to the video</a> instead.
@@ -64,7 +64,7 @@
     <div class="empty"></div>
     <figure>
       <figcaption>Watch a rabbit:</figcaption>
-      <video src="./../../utility/demo/sample/video.webm" controls></video>
+      <video src="../.sample/video.webm" controls></video>
     </figure>
     <div class="empty"></div>
   </div>
@@ -72,7 +72,7 @@
   <div>
     <div class="code" data-name="img[alt][title]"></div>
     <div class="empty"></div>
-    <img src="../../../utility/demo/sample/image.jpg" alt="Image sample 300x300 px" title="Image sample&#10;size 300x300 px">
+    <img src="../.sample/image.jpg" alt="Image sample 300x300 px" title="Image sample&#10;size 300x300 px">
     <div class="empty"></div>
   </div>
   <div>
@@ -80,7 +80,7 @@
     <div class="empty"></div>
     <figure>
       <figcaption>jpg</figcaption>
-      <img src="../../../utility/demo/sample/image.jpg">
+      <img src="../.sample/image.jpg">
     </figure>
     <div class="empty"></div>
   </div>
@@ -89,7 +89,7 @@
     <div class="empty"></div>
     <figure>
       <figcaption>svg</figcaption>
-      <img src="../../../utility/demo/sample/image.svg" width="200" height="200">
+      <img src="../.sample/image.svg" width="200" height="200">
     </figure>
     <div class="empty"></div>
   </div>
@@ -131,8 +131,8 @@
     <div class="code" data-name="picture source[srcset][media] img"></div>
     <div class="empty"></div>
     <picture>
-      <source srcset="../../../utility/demo/sample/128x128.png" media="(orientation: portrait)" />
-      <img src="../../../utility/demo/sample/640x480.png" />
+      <source srcset="../.sample/128x128.png" media="(orientation: portrait)" />
+      <img src="../.sample/640x480.png" />
     </picture>
     <div class="empty"></div>
   </div>
@@ -142,8 +142,8 @@
     <figure>
       <figcaption>Picture</figcaption>
       <picture>
-        <source srcset="../../../utility/demo/sample/128x128.png" media="(orientation: portrait)" />
-        <img src="../../../utility/demo/sample/640x480.png" />
+        <source srcset="../.sample/128x128.png" media="(orientation: portrait)" />
+        <img src="../.sample/640x480.png" />
       </picture>
     </figure>
     <div class="empty"></div>
@@ -173,7 +173,7 @@
   <div>
     <div class="code" data-name="iframe[width][height]"></div>
     <div class="empty"></div>
-    <iframe width="500" height="300" src="../../../utility/demo/sample/example.html"></iframe>
+    <iframe width="500" height="300" src="../.sample/example.html"></iframe>
     <div class="empty"></div>
   </div>
   <div>
@@ -186,7 +186,7 @@
   <div>
     <div class="code" data-name="embed[type=video/webm]"></div>
     <div class="empty"></div>
-    <embed type="video/webm" src="../../../utility/demo/sample/video.webm">
+    <embed type="video/webm" src="../.sample/video.webm">
     <div class="empty"></div>
   </div>
   <div>
@@ -194,7 +194,7 @@
     <div class="empty"></div>
     <figure>
       <figcaption>PDF</figcaption>
-      <embed type="application/pdf" src="../../../utility/demo/sample/file.pdf">
+      <embed type="application/pdf" src="../.sample/file.pdf">
     </figure>
     <div class="empty"></div>
   </div>
@@ -204,7 +204,7 @@
     <div class="empty"></div>
     <figure>
       <figcaption>PDF</figcaption>
-      <object type="application/pdf" data="../../../utility/demo/sample/file.pdf"></object>
+      <object type="application/pdf" data="../.sample/file.pdf"></object>
     </figure>
     <div class="empty"></div>
   </div>
@@ -213,7 +213,7 @@
     <div class="empty"></div>
     <figure>
       <figcaption>PDF</figcaption>
-      <object type="text/html" data="../../../utility/demo/sample/example.html"></object>
+      <object type="text/html" data="../.sample/example.html"></object>
     </figure>
     <div class="empty"></div>
   </div>

@@ -28,8 +28,9 @@ let
   d = document,
   js_lib = d.currentScript.getAttribute('src').replace('/demo/dev.js','/js/')
   ;
-$module({ name: 'start',
+$module({ name: 'dev',
   dependency: [
+    js_lib+'path.js',
     js_lib+'ui.js',
     js_lib+'displace.js',
     js_lib+'configBox.js',
@@ -41,47 +42,43 @@ $return(()=> {
   return false
 })
 */
-function start() {
+function dev() {
+  let path = new Path(location.pathname)
+  let path_root = path.root('css-initial/src/')
+  let dot_rel = path.relative(path_root)
+  let url_component = path.location.substring(path_root.length)
+  let path_compare = 'utility/demo/compare/compare.html'
+  let path_emulator = 'utility/demo/simulator/index.html'
+  function compare() {
+    location.assign(dot_rel+path_compare+'?'+url_component)
+  }
+  function emulate() {
+    location.assign(dot_rel+path_emulator+'?'+url_component)
+  }
   function unstyle() {
-    const LINKS = document.querySelectorAll('link')
-    const N = LINKS.length - 2
-    LINKS[N].toggleAttribute('disabled')
+    document.querySelectorAll('link')[0].toggleAttribute('disabled')
   }
   function debug() {
     document.body.classList.toggle('debug')
   }
-  configBox({
-    id: 'config_box',
-    title: 'Dev',
-    style: {
-      bottom: '0',
-      right: '0',
-      width: '100px'
-    },
-    body: [
-      { type: 'action', content: 'Debug', onclick: (el)=> {debug()} },
-      { type: 'action', content: 'Unstyle', onclick: (el)=> {unstyle()} },
-      { type: 'action', content: 'Compare' },
-      { type: 'action', content: 'Emulator' }
-    ]
-  })
-}/*
-// file.html?[view=][unstyle[&debug]]
-if( location.search.includes('unstyle') ) {
-  // last <link>
-  const LINKS = document.querySelectorAll('link')
-  const N = LINKS.length - 2
-  LINKS[N].remove()
+  if(window.top.length < 1) { // not in iframe
+    configBox({
+      id: 'config_box',
+      title: 'Dev',
+      style: {
+        top: '0',
+        right: '0',
+        width: '100px'
+      },
+      body: [
+        { type: 'action', content: 'Debug', onclick: (el)=> {debug()} },
+        { type: 'action', content: 'Unstyle', onclick: (el)=> {unstyle()} },
+        { type: 'action', content: 'Compare', onclick: ()=> {compare()} },
+        { type: 'action', content: 'Emulator', onclick: ()=> {emulate()} }
+      ]
+    })
+  }
+  if(location.search.includes('unstyle')) {
+    document.querySelectorAll('link')[0].setAttribute('disabled','')
+  }
 }
-if( location.search.includes('debug') ) {
-  document.body.classList.add('debug')
-}
-
-window.addEventListener('load', ()=> {
-  $script.path(js_lib)
-  $require.css([js_lib+'config-box.css'])
-  $include(['ui.js','displace.js','configBox.js'], ()=> {
-    
-  })
-})
-*/

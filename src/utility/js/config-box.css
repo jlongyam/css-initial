@@ -1,14 +1,3 @@
-html {
-  height: 100%;
-  overflow: hidden;
-}
-body {
-  height: 100%;
-  position: relative;
-  overflow: auto;
-  margin: 0;      
-}
-
 .config-box {
   /* ==================== */
   --config-box_color-1st: gray;
