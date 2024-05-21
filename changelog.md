@@ -1,5 +1,9 @@
 # Changelog
 
+## v0.1.5 - 2024/05/21
+
+- Fix demo
+
 ## v0.0.5 - 2024/05/21
 
 - Add dist
