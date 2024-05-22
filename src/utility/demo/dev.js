@@ -34,7 +34,8 @@ $module({ name: 'dev',
     js_lib+'ui.js',
     js_lib+'displace.js',
     js_lib+'configBox.js',
-    js_lib+'config-box.css'
+    js_lib+'config-box.css',
+    '../../../_tweak.css'
   ]
 })
 /*
@@ -66,8 +67,8 @@ function dev() {
       id: 'config_box',
       title: 'Dev',
       style: {
-        top: '0',
-        right: '0',
+        bottom: '10px',
+        right: '25px',
         width: '100px'
       },
       body: [

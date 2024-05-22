@@ -5,7 +5,7 @@
   "main": "dist/initial.css",
   "scripts": {
     "build-css": "node build/css.js",
-    "build-demo": "node build/component.js",
+    "build-demo": "node build/demo.js",
     "build-asset": "node build/asset.js"
   },
   "author": "jlongyam",

@@ -1,10 +1,10 @@
 @layer variable {
   @layer layout {
     :root {
-      --padding-layout: 1em;/* -container*/
+      --padding-layout: 1em;
       --margin-layout: 1em;
       --padding-section: .5em;
-      --margin-section: .5em 0; /* tb rl */
+      --margin-section: .5em;
     }
   }
   @layer text {
@@ -152,6 +152,16 @@ body {
   @layer audio {
     :root {
       --audio_width: 300px;
+    }
+  }
+  @layer aside {
+    :root {
+      --aside-postion_top: 0;
+      --aside-postion_right: unset;
+      --aside-postion_bottom: unset;
+      --aside-postion_left: 0;
+      --aside-toggle_size: 36px;
+      --aside-border_size: 1px;
     }
   }
 }

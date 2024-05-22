@@ -1,10 +1,10 @@
 @layer variable {
   @layer layout {
     :root {
-      --padding-layout: 1em;/* -container*/
+      --padding-layout: 1em;
       --margin-layout: 1em;
       --padding-section: .5em;
-      --margin-section: .5em 0; /* tb rl */
+      --margin-section: .5em;
     }
   }
   @layer text {
@@ -152,6 +152,16 @@ body {
   @layer audio {
     :root {
       --audio_width: 300px;
+    }
+  }
+  @layer aside {
+    :root {
+      --aside-postion_top: 0;
+      --aside-postion_right: unset;
+      --aside-postion_bottom: unset;
+      --aside-postion_left: 0;
+      --aside-toggle_size: 36px;
+      --aside-border_size: 1px;
     }
   }
 }
@@ -451,7 +461,6 @@ ol {
 }
 menu {
   list-style: none;
-  padding: 1em;
   menu { padding: 0 0 0 1em; }
 }
 
@@ -1009,6 +1018,56 @@ object {
 }
 
 
+:has(>aside) {
+  padding-top: var(--aside-toggle_size);
+  min-height: var(--aside-toggle_size);
+}
+aside {
+  position: absolute;
+  top: var(--aside-postion_top);
+  right: var(--aside-postion_right);
+  bottom: var(--aside-postion_bottom);
+  left: var(--aside-postion_left);
+  min-height: var(--aside-toggle_size);
+  min-width: var(--aside-toggle_size);
+  background-color: #fff;
+  color: #000;
+  padding: var(--padding-layout);
+  visibility: hidden;
+  &::after {
+    position: absolute;
+    top: var(--aside-postion_top);
+    right: var(--aside-postion_right);
+    bottom: var(--aside-postion_bottom);
+    left: var(--aside-postion_left);
+    height: var(--aside-toggle_size);
+    width: var(--aside-toggle_size);
+    content: " ";
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="24" height="24" viewBox="0 0 24 24"><path d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z" /></svg>');
+    background-position: center;
+    background-color: whitesmoke;
+    border: 1px solid var(--color-border_layout);
+    visibility: visible;
+  }
+  &:hover::after {
+    display: none;
+  }
+  &:hover {
+    visibility: visible;
+    min-width: 250px;
+    max-width: 70vw;
+    max-height: 80vh;
+    overflow: auto;
+    white-space: nowrap;
+    z-index: 999;
+    border: 1px solid var(--color-border_layout);
+    &:has(>nav) {
+      border: none;
+      padding: 0;
+    }
+  }
+}
+
 details {
   --details_icon-close: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" fill="gray" width="24" height="24" viewBox="0 0 24 24"><path d="M10,17L15,12L10,7V17Z" /></svg>');
   --details_icon-open: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" fill="gray" width="24" height="24" viewBox="0 0 24 24"><path d="M7,10L12,15L17,10H7Z" /></svg>');
@@ -1035,66 +1094,6 @@ summary {
 	details[open] > summary:before {
 		content: var(--details_icon-open);
 		}
-
-aside {
-  --aside-postion_top: 10px;
-  --aside-postion_right: 25px;
-  --aside-postion_bottom: unset;
-  --aside-postion_left: unset;
-  --aside-toggle_size: 36px;
-  position: fixed;
-  top: var(--aside-postion_top);
-  right: var(--aside-postion_right);
-  bottom: var(--aside-postion_bottom);
-  left: var(--aside-postion_left);
-  min-height: var(--aside-toggle_size);
-  min-width: var(--aside-toggle_size);
-  height: var(--aside-toggle_size);
-  width: var(--aside-toggle_size);
-  background-color: #fff;
-  color: #000;
-  border: 1px solid var(--color-border_layout);
-  padding: var(--padding-layout);
-  overflow: hidden;
-  z-index: 98;
-  visibility: hidden;
-  &::after {
-    position: fixed;
-    top: var(--aside-postion_top);
-    right: var(--aside-postion_right);
-    bottom: var(--aside-postion_bottom);
-    left: var(--aside-postion_left);
-    height: var(--aside-toggle_size);
-    width: var(--aside-toggle_size);
-    content: " ";
-    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="24" height="24" viewBox="0 0 24 24"><path d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z" /></svg>');
-    background-position: center;
-    background-color: whitesmoke;
-    border: 1px solid var(--color-border_layout);
-    visibility: visible;
-    z-index: 99;
-  }
-  &:hover::after {
-    display: none;
-  }
-  &:hover {
-    visibility: visible;
-    min-width: 250px;
-    max-width: 70vw;
-    max-height: 80vh;
-    width: auto;
-    height: auto;
-    overflow: auto;
-    white-space: nowrap;
-  }
-  @media screen and (max-width: 768px) {
-    --aside-postion_top: 10px;
-    --aside-postion_right: 10px;
-    --aside-postion_bottom: unset;
-    --aside-postion_left: unset;
-    --aside-toggle_size: 36px;
-  }
-}
 
 
 dialog {

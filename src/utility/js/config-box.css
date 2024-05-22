@@ -20,6 +20,7 @@
   z-index: 999;
   border-radius: 2px;
   width: 200px;
+  height: fit-content;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
